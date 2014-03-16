@@ -22,7 +22,7 @@ body#about-page {
 
 
 body#structure-page {
-  background-image: url('structure.jpg');
+  background-image: url('./structure.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
