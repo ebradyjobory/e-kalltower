@@ -21,6 +21,30 @@ body#about-page {
 }
 
 
+body#structure-page {
+  background-image: url('structure.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+body#michanical-page {
+  background-image: url('mechanical.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+
+body#electrical-page {
+  background-image: url('electrical.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+
+
 .container {
   padding-left: 70px;
 }
@@ -223,6 +247,7 @@ line-height: 1.25;
 .statement-p a {
 color: white;
 text-decoration: none;
+
 }
 .statement-p a:hover {
 color: white;
@@ -236,6 +261,7 @@ text-decoration: underline;
 
 .statement p a {
   color: white;
+  text-shadow: 1px 1px white;
 }
 .statement p a:hover {
   text-decoration: underline;

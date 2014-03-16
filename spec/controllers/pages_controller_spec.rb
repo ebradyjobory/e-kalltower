@@ -16,11 +16,12 @@ describe PagesController do
     end
   end
 
-  describe "GET 'projects'" do
+  describe "GET 'service'" do
     it "returns http success" do
-      get 'projects'
+      get 'service'
       response.should be_success
     end
   end
+
 
 end
