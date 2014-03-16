@@ -29,7 +29,7 @@ body#structure-page {
 }
 
 body#michanical-page {
-  background-image: url('mechanical.jpg');
+  background-image: url('structure.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
