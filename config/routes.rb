@@ -4,9 +4,9 @@ EKalltower::Application.routes.draw do
   match '/about', to: 'pages#about', via: 'get'
   match '/contact', to: 'pages#contact', via: 'get'
   match '/structural', to: 'pages#structure', via: 'get'
-  match '/michanical', to: 'pages#michanic', via: 'get'
+  match '/mechanical', to: 'pages#mechanical', via: 'get'
   match '/electrical', to: 'pages#electric', via: 'get'
-  match '/combat', to: 'pages#combat', via: 'get'
+  match '/combo', to: 'pages#combo', via: 'get'
  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

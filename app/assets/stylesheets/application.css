@@ -28,8 +28,15 @@ body#structure-page {
   margin: 0;
 }
 
-body#michanical-page {
-  background-image: url('structure.jpg');
+body#mechanical-page {
+  background-image: url('mechanical.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+body#combo-page {
+  background-image: url('combo.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
@@ -249,6 +256,21 @@ color: white;
 text-decoration: none;
 
 }
+
+ul li {
+color: white;
+text-decoration: none;
+margin-right: 675px;
+margin-top: 0px;
+font-size: 21px;
+font-weight: 300;
+text-align: block;
+font-family: 'Roboto', sans-serif;
+color: white;
+text-shadow:rgba(0, 0, 0, 0.4) 0 1px 1px;
+line-height: 1.25;
+
+}
 .statement-p a:hover {
 color: white;
 text-decoration: underline;
@@ -261,7 +283,6 @@ text-decoration: underline;
 
 .statement p a {
   color: white;
-  text-shadow: 1px 1px white;
 }
 .statement p a:hover {
   text-decoration: underline;
