@@ -20,6 +20,14 @@ body#about-page {
   margin: 0;
 }
 
+body#projects-page {
+  background-image: url('projects.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+
+}
+
 
 body#structure-page {
   background-image: url('./structure.jpg');
@@ -122,6 +130,14 @@ body#electrical-page {
 
 }*/
 
+span {
+  color: black;
+}
+
+span:hover {
+  color: white;
+}
+
 .links li {
   font-family: 'Unica One', cursive;
   font-size: 20px;
@@ -218,9 +234,10 @@ ul li:hover ul {
 
 .statement {
   margin-top: 100px;
-  margin-bottom: 125px;
+  margin-bottom: 100px;
   padding-left: 10px;
 }
+
 
 .statement h2 {
   color: white;
@@ -229,6 +246,16 @@ ul li:hover ul {
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
+}
+
+.statement-projects {
+    color: white;
+    padding-top: 70px;
+    text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+  
 }
 .statement h3 {
   color: white;
@@ -462,7 +489,7 @@ opacity: 0.5;
 
 span p {
   margin-top: -90px;
- color: white;
+  color: white;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
   font-size: 20px;
   font-weight: 300;
@@ -471,4 +498,26 @@ span p {
   text-align: justify;
   width: 500px;
 }
+
+.projects {
+  margin-right: 400px;
+  padding-left: 1px;
+  font-size: 21px;
+  font-weight: 300;
+  text-align: block;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-shadow:rgba(0, 0, 0, 0.4) 0 1px 1px;
+  line-height: 1.25;
+}
+
+.projects a {
+  color: white;
+  text-decoration: none;
+}
+.projects a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 
