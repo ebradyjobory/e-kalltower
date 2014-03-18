@@ -1,6 +1,7 @@
 .logo {
-  margin-left: 10px;
-  margin-top: 10px;
+  margin-left: 20px;
+  margin-top: 1px;
+  padding-bottom: 10px;
 }
 
 .header {
@@ -8,8 +9,7 @@
   background-repeat: repeat no-repeat;
   padding-bottom: 10px;
   padding-top: 10px;
-  color: white;
-  margin-bottom: -50px;
+  padding-bottom: 0.5px;
   
 }
 
@@ -189,8 +189,8 @@ span:hover {
 }*/
 
 .nav-links {
-  margin-left: 180px;
-  margin-top: -70px;
+  margin-left: 150px;
+  margin-top: -80px;
 
 
 }
