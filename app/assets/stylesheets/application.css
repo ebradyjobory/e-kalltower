@@ -1,6 +1,26 @@
 .logo {
   margin-left: 10px;
   margin-top: 10px;
+}
+
+.header {
+  background-image: linear-gradient(#222222, #111111);
+  background-repeat: repeat no-repeat;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: white;
+  margin-bottom: -50px;
+  
+}
+
+.header a:hover {
+  color: white;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+}
 
 }
 
@@ -136,7 +156,7 @@ body#electrical-page {
 }*/
 
 span {
-  color: black;
+  color: grey;
 }
 
 span:hover {
@@ -160,18 +180,19 @@ span:hover {
 
 }
 
-.links li:hover {
+/*.links li:hover {
   color: white;
   transition: all 0.1s;
    -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
   -ms-transition: all 0.1s;
   -o-transition: all 0.1s;
-}
+}*/
 
 .nav-links {
-  margin-left: 220px;
-  margin-top: -80px;
+  margin-left: 180px;
+  margin-top: -70px;
+
 
 }
 /*ul li:hover {
@@ -189,31 +210,31 @@ ul li ul {
   visibility: hidden;
 }
 .links li ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .links li a {
   text-decoration: none;
-  color: black;
+  color: grey;
 }
-.links li a:hover {
+/*.links li a:hover {
   color: white;
   transition: all 0.1s;
   -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
   -ms-transition: all 0.1s;
   -o-transition: all 0.1s;
-}
+}*/
 
-ul li ul li a:hover {
+/*ul li ul li a:hover {
   color: white;
   transition: all 0.1s;
   -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
   -ms-transition: all 0.1s;
   -o-transition: all 0.1s;
-}
+}*/
 
 
 ul li:hover ul {
@@ -225,6 +246,15 @@ ul li:hover ul {
 
 #drop-list li {
   padding: 2.99px;
+  background-image: linear-gradient(#222222, #111111);
+  background-repeat: repeat no-repeat;
+}
+
+#drop-list li a {
+  color: grey;
+}
+#drop-list li a:hover {
+  color: white;
 }
 
 .active {
@@ -290,7 +320,7 @@ text-decoration: none;
 }
 
 ul li {
-color: white;
+color: grey;
 text-decoration: none;
 margin-right: 675px;
 margin-top: 0px;
@@ -298,7 +328,6 @@ font-size: 21px;
 font-weight: 300;
 text-align: block;
 font-family: 'Roboto', sans-serif;
-color: white;
 text-shadow:rgba(0, 0, 0, 0.4) 0 1px 1px;
 line-height: 1.25;
 
@@ -515,6 +544,10 @@ span p {
   color: white;
   text-shadow:rgba(0, 0, 0, 0.4) 0 1px 1px;
   line-height: 1.25;
+}
+
+.droplist2 {
+  color: grey;
 }
 
 .projects a {
