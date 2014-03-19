@@ -600,4 +600,8 @@ span p {
   text-decoration: underline;
 }
 
+.home-section {
+  background-color: white;
+  padding: 1%;
+}
 
