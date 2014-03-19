@@ -1,8 +1,9 @@
 .logo {
   margin-left: 20px;
-  margin-top: 9px;
+  margin-top: 1px;
   padding-bottom: 20px;
 }
+
 
 .header {
   background-image: linear-gradient(#222222, #111111);
@@ -13,7 +14,6 @@
 }
 
 .header a:hover {
-  color: white;
   transition: all 0.1s;
   -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
@@ -168,6 +168,10 @@ span:hover {
   color: white;
 }
 
+h3 {
+  font-weight: 300;
+}
+
 .links li {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
@@ -198,8 +202,11 @@ span:hover {
   margin-left: 150px;
   margin-top: -90px;
   padding-top: 19px;
-  margin-bottom: -11px;
+  margin-bottom: -19px;
+}
 
+.nav-links a:hover {
+  border-top: 2px solid #ebdf9d;
 
 }
 /*ul li:hover {
@@ -223,9 +230,11 @@ ul li ul {
 
 .links li a {
   text-decoration: none;
-  color: grey;
-
+  color: #bdc3c7;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
 }
+
 /*.links li a:hover {
   color: white;
   transition: all 0.1s;
@@ -244,7 +253,9 @@ ul li ul {
   -o-transition: all 0.1s;
 }*/
 
-
+p {
+  
+}
 ul li:hover ul {
   display: block;
   opacity: 1;
@@ -276,11 +287,16 @@ ul li:hover ul {
 /* Front page statement */
 
 .statement {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 85px;
+  margin-bottom: 85px;
   padding-left: 10px;
 }
 
+.statement span {
+  background-color: #FFFF99;
+  color: #2c3e50;
+  text-shadow: none;
+}
 
 .statement h2 {
   color: white;
@@ -292,7 +308,7 @@ ul li:hover ul {
 }
 
 .statement-projects {
-    color: black;
+    color: white;
     padding-top: 70px;
     text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
     font-size: 20px;
@@ -319,7 +335,7 @@ text-align: block;
 font-family: 'Roboto', sans-serif;
 color: white;
 text-shadow:rgba(0, 0, 0, 0.4) 0 1px 1px;
-line-height: 1.25;
+line-height: 1.5;
 font-weight: 400;
 }
 .statement-p a {
@@ -387,7 +403,8 @@ text-decoration: underline;
 .footer h4 {
   color: grey;
   margin-bottom: 1px;
-  font-family: 'Unica One', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 .footer a {
@@ -396,7 +413,7 @@ text-decoration: underline;
   display: inline-block;
   padding: 1px;
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
 }
 .footer a:hover {
   color: white;
@@ -409,6 +426,11 @@ text-decoration: underline;
 
 .footer li{
   list-style: none;
+  color: grey;
+  margin-bottom: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .engineering {
@@ -569,5 +591,7 @@ span p {
   color: white;
   text-decoration: underline;
 }
+
+
 
 
