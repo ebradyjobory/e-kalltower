@@ -28,7 +28,7 @@
 }
 
 body#home-page {
-  background-image: url('main_page4.jpg');
+  background-image: url('con.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
@@ -171,7 +171,7 @@ span:hover {
 .links li {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
-  font-weight: 50px;
+  font-weight: 500;
   display: inline-block;
   margin-right: -4px;
   position: relative;
@@ -224,6 +224,7 @@ ul li ul {
 .links li a {
   text-decoration: none;
   color: grey;
+
 }
 /*.links li a:hover {
   color: white;
@@ -282,7 +283,7 @@ ul li:hover ul {
 
 
 .statement h2 {
-  color: black;
+  color: white;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
   font-size: 35px;
   font-weight: 400;
@@ -300,7 +301,7 @@ ul li:hover ul {
   
 }
 .statement h3 {
-  color: black;
+  color: white;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
   font-size: 20px;
   font-weight: 500;
@@ -316,13 +317,13 @@ font-size: 21px;
 font-weight: 300;
 text-align: block;
 font-family: 'Roboto', sans-serif;
-color: black;
+color: white;
 text-shadow:rgba(0, 0, 0, 0.4) 0 1px 1px;
 line-height: 1.25;
 font-weight: 400;
 }
 .statement-p a {
-color: black;
+color: white;
 text-decoration: none;
 
 }
@@ -351,7 +352,7 @@ text-decoration: underline;
 }
 
 .statement p a {
-  color: black;
+  color: white;
   font-weight: 400;
 }
 .statement p a:hover {
