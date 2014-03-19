@@ -28,14 +28,14 @@
 }
 
 body#home-page {
-  background-image: url('con.jpg');
+  background-image: url('construction2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
 }
 
 body#contact-page {
-  background-image: url('construction2.jpg');
+  background-image: url('combo.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
@@ -56,8 +56,14 @@ body#projects-page {
 
 }
 
+body#services-page {
+  background-image: url('./structure.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
 
-body#structure-page {
+/*body#structure-page {
   background-image: url('./structure.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -84,7 +90,7 @@ body#electrical-page {
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
-}
+}*/
 
 
 
@@ -287,9 +293,10 @@ ul li:hover ul {
 /* Front page statement */
 
 .statement {
-  margin-top: 85px;
-  margin-bottom: 85px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   padding-left: 10px;
+  height: 400px;
 }
 
 .statement span {
@@ -305,6 +312,7 @@ ul li:hover ul {
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
+  padding-top: 100px;
 }
 
 .statement-projects {
@@ -328,7 +336,7 @@ ul li:hover ul {
 
 .statement p {
 margin-right: 675px;
-margin-top: 0;
+margin-top: -350px;
 font-size: 21px;
 font-weight: 300;
 text-align: block;
@@ -591,7 +599,5 @@ span p {
   color: white;
   text-decoration: underline;
 }
-
-
 
 
