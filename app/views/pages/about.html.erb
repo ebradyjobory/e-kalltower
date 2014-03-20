@@ -9,9 +9,9 @@
   </div>
 </body>
 
-<div class="white-section">
-<% provide(:page, 'this is the about page white section') %>
-</div>
+<% content_for :section do %>
+<% render 'layouts/about' %>
+<%end%>
 
 
 <!-- <div class="statement" id="about-statement">
