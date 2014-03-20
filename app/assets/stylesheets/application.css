@@ -591,10 +591,10 @@ span p {
   padding-left: 2%;
   padding-top: 1%;
   padding-right: 2%;
-  padding-bottom: 20%;
   background-color: #ecf0f1;
   font-family: 'Roboto', sans-serif;
   text-shadow: none;
+  opacity: 0.85;
 }
 
 .white-section a {
@@ -623,4 +623,42 @@ span p {
 
 .white-section h3 {
   font-size: 20px;
+  font-weight: 200;
+}
+
+.white-section h2 {
+  font-size: 20px;
+}
+
+.about-container {
+  padding-bottom: 25%;
+}
+
+.services-container {
+  padding-bottom: 22%;
+}
+
+.contact-container {
+  padding-bottom: 25%;
+}
+
+.leadership-roles h2 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.leadership-roles span {
+  font-size: 15px;
+  font-weight: 300;
+  color: #7f8c8d;
+  border-top: 2px solid #ebdf9d;
+}
+
+.leadership-roles p {
+  font-size: 13px;
+}
+
+.services-contact-us {
+  font-size: 14px;
+  font-weight: 550;
 }
