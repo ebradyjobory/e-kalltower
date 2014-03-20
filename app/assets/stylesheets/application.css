@@ -634,6 +634,28 @@ span p {
   padding-bottom: 25%;
 }
 
+.projects-container {
+  padding-bottom: 42%
+}
+
+.projects-container h3 {
+  font-size: 18px;
+  font-weight: 300;
+  border-top: 2px solid #ebdf9d;
+  margin-bottom: 0;
+  width: 370px;
+  }
+
+.projects-container span {
+  font-size: 15px;
+  font-weight: 300;
+  color: #7f8c8d;
+}
+
+.projects-container p{
+  font-size: 14px;
+}
+
 .services-container {
   padding-bottom: 22%;
 }
