@@ -634,6 +634,12 @@ span p {
   padding-bottom: 25%;
 }
 
+.about-columns {
+  float: left;
+  width: 31%;
+  padding-right: 2%;
+}
+
 .projects-container {
   padding-bottom: 42%
 }
