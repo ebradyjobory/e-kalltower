@@ -170,6 +170,14 @@ span {
   color: grey;
 }
 
+.projects-container h3:hover {
+  text-shadow: 0 0 1px black;
+}
+
+nth-last-child(4){
+  color: blue;
+}
+
 span:hover {
   color: white;
 }
@@ -371,6 +379,10 @@ text-decoration: underline;
   text-decoration: underline;
 }
 
+.facebook p:nth-child(7) img{
+
+}
+
 .copyrights {
   position: relative;
   margin-top: 150px;
@@ -385,7 +397,21 @@ text-decoration: underline;
   color: grey;
 }
 
-.credit {
+.copyrights p:nth-child(2){
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  margin-top: -30px;
+}
+.copyrights p:nth-child(2) a{
+  background-color: #FFFF99;
+  color: black;
+}
+.copyrights p:nth-child(2) a:hover{
+  color: blue;
+}
+
+/*.credit {
   text-align: right;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -399,7 +425,7 @@ text-decoration: underline;
   color: #2c3e50;
   text-decoration: none;
   font-size: 12px;
-}
+}*/
 
 
 /* Beginning bottom of the page */

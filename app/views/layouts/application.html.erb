@@ -40,11 +40,14 @@
          <div class="container">
            <%= yield %>
          </div>
-
-
+           
+           <% if current_page?('/') %>
+           <%elsif%>    
            <div class="white-section">
              <%= yield :section %>
            </div>
+           <%end%>
+
 
          <div class="footer">
          <div class="footer-columns">
@@ -61,7 +64,8 @@
             <p>+964.662.641.570</p>
             <p><%= link_to image_tag("facebook.png", :size => "25x25", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></p>
           </div>
-            <p class="copyrights"><strong>&copy</strong> 2014 E-Kall Tower Company. All Rights Reserved.</p>
-            <p class="credit">Made in the USA by <a href="http://cuneiform.io">cuneiform.io</a></p>
-          </div> 
-</html>
+          <div class="copyrights">
+            <p><strong>&copy</strong> 2014 E-Kall Tower Company. All Rights Reserved.</p>
+            <p>Made in the USA by <a href="http://cuneiform.io" target="_blank">cuneiform.io</a></p>
+          </div>
+          </html>
