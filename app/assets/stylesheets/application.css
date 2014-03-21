@@ -670,6 +670,10 @@ span p {
   padding-bottom: 25%;
 }
 
+.contact-facebook {
+  background-color: none;
+}
+
 .leadership-roles h2 {
   font-size: 18px;
   font-weight: 300;
