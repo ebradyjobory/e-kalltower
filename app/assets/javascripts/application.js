@@ -16,5 +16,12 @@
 //= require_tree .
 
 
+$(document).ready(function(){
+$( "h3, span" ).click(function() {
+  $(this).next('p').toggle();
+  $(this).addClass('.arrow');
+  });
 
+
+});
 

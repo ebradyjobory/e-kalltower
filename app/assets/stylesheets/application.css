@@ -5,6 +5,16 @@
   padding-bottom: 20px;
 }
 
+body {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+background-image {
+  max-width: 100%;
+}
+
 
 .header {
   background-image: linear-gradient(#222222, #111111);
@@ -32,6 +42,8 @@ body#home-page {
   background-image: url('construction2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: contain;
+  background-size: 100%;
   margin: 0;
 }
 
@@ -39,13 +51,17 @@ body#contact-page {
   background-image: url('combo.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin: 0;
+  background-size: contain;
+  background-size: 100%;
+  margin: 0%;
 }
 
 body#about-page {
   background-image: url('con.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: contain;
+  background-size: 100%;
   margin: 0;
 }
 
@@ -53,6 +69,8 @@ body#projects-page {
   background-image: url('projects.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: contain;
+  background-size: 100%;
   margin: 0;
 
 }
@@ -61,6 +79,8 @@ body#services-page {
   background-image: url('./structure.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: contain;
+  background-size: 100%;
   margin: 0;
 }
 
@@ -94,6 +114,10 @@ body#electrical-page {
 }*/
 
 
+.arrow {
+  background-color: red;
+}
+
 
 .container {
   padding-left: 1px;
@@ -112,8 +136,8 @@ body#electrical-page {
   padding: 5px;
   border-radius: 5px;
   border-color:#252525;
-  margin-left: 15px;
-  margin-top: 20px;
+  margin-left: 2%;
+  margin-top: 2%;
   font-family: 'Roboto', sans-serif;  
   font-size: 1.5em;
   letter-spacing: -1px;
@@ -122,7 +146,7 @@ body#electrical-page {
 .navbar-brand a {
   color: white;
   font-family: 'Roboto', sans-serif;
-  margin: 15px;
+  margin: 2%;
   text-decoration: none;
 
 }
@@ -139,6 +163,9 @@ body#electrical-page {
 
 /* Beginning of the navbar-brand */
 
+.test {
+  background-color: red;
+}
 
 /*.navbar-links a {
   color: white;
@@ -237,11 +264,19 @@ h3 {
   -o-transition: all 0.1s;
 }*/
 
+img {
+  max-width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+}
+
 .nav-links {
-  margin-left: 150px;
-  margin-top: -90px;
-  padding-top: 19px;
-  margin-bottom: -19px;
+  margin-left: 25%;
+  margin-top: -15%;
+  padding-top: 2%;
+  margin-bottom: -1%;
 }
 
 .nav-links a:hover {

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
       <title><%= full_title(yield(:title))%></title>
       <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
@@ -17,7 +16,8 @@
           <div class="logo">
           <%= link_to image_tag("logo3.png", :size => "150x50", :alt => 'logo'), root_path %>
           </div>
-
+   </head>
+  <body>
           <div class="nav-links">
             <ul class="links">
               <li class="li"><a href="/about">ABOUT</a></li>
@@ -35,9 +35,6 @@
             </ul> -->
         </div>
     </div>
-
-
-    </head>
          <div class="container">
            <%= yield %>
          </div>
@@ -70,5 +67,6 @@
             <p><strong>&copy</strong> 2014 E-Kall Tower Company. All Rights Reserved.</p>
             <p>Made in the USA by <a href="http://cuneiform.io" target="_blank">cuneiform.io</a></p>
           </div>
-        
+    
+          </body>
           </html>
