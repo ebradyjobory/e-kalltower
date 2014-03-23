@@ -18,13 +18,21 @@
 <div class="about-columns">
 <h2>Leadership</h2>
 <div class="leadership-roles">
-<h2>Omer Abood<br>
-	<span>Owner-Operator</span></h2>
-	<p>graduate of the University of Baghdad's Department of Engineering</p>
+	<h2 id="glow">Omer Abood<br>
+		<span>Owner-Operator</span></h2>
+		 <p style='display:none'>graduate of the University of Baghdad's Department of Engineering</p>
 
-	<h2>Erica Dollar<br>
-		<span>General Manager</span></h2>
-		<p>extensive background in construction management projects across Iraq and Afghanistan</p>
+		<h2 id="glow">Erica Dollar<br>
+			<span>General Manager</span></h2>
+			<p style='display:none'>extensive background in construction management projects across Iraq and Afghanistan</p>
 </div>
+<script>
+$(document).ready(function(){
+$( "h2" ).click(function() {
+  $(this).next('p').toggle(100);
+  });
+
+});
+</script>
 </div>
 </div>

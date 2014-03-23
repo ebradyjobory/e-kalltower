@@ -1,3 +1,4 @@
+
 .logo {
   margin-left: 20px;
   margin-top: 1px;
@@ -95,7 +96,10 @@ body#electrical-page {
 
 
 .container {
-  padding-left: 70px;
+  padding-left: 1px;
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
 }
 
 
@@ -111,7 +115,7 @@ body#electrical-page {
   margin-left: 15px;
   margin-top: 20px;
   font-family: 'Roboto', sans-serif;  
-  font-size: 24px;
+  font-size: 1.5em;
   letter-spacing: -1px;
 
 }
@@ -170,8 +174,29 @@ span {
   color: grey;
 }
 
+#glow:hover {
+-webkit-stroke-width: 2.3px;
+   -webkit-stroke-color: #FFFFFF;
+   -webkit-fill-color: #FFFFFF;
+   text-shadow: 1px 0px 5px yellow;
+   -webkit-transition: width 0.3s; /*Safari & Chrome*/
+   transition: width 0.3s;
+   -moz-transition: width 0.3s; /* Firefox 4 */
+   -o-transition: width 0.3s; /* Opera */
+}
+
+.proj {
+  color: black;
+}
 .projects-container h3:hover {
-  text-shadow: 0 0 1px black;
+  -webkit-stroke-width: 2.3px;
+   -webkit-stroke-color: #FFFFFF;
+   -webkit-fill-color: #FFFFFF;
+   text-shadow: 1px 0px 5px yellow;
+   -webkit-transition: width 0.3s; /*Safari & Chrome*/
+   transition: width 0.3s;
+   -moz-transition: width 0.3s; /* Firefox 4 */
+   -o-transition: width 0.3s; /* Opera */
 }
 
 nth-last-child(4){
@@ -188,7 +213,7 @@ h3 {
 
 .links li {
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 0.9375em;
   font-weight: 500;
   display: inline-block;
   margin-right: -4px;
@@ -221,8 +246,10 @@ h3 {
 
 .nav-links a:hover {
   border-top: 2px solid #ebdf9d;
-
 }
+
+
+
 /*ul li:hover {
   background: #555;
   color: #fff;
@@ -290,10 +317,12 @@ ul li:hover ul {
   color: white;
 }
 
-.active {
-  border-bottom: solid black; 
-}
 
+
+.nav-links li a:active {
+  border-top: 2px solid #ebdf9d;
+
+}
 
 
 /* End of the navbar */
@@ -316,7 +345,7 @@ ul li:hover ul {
 .statement h2 {
   color: white;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
-  font-size: 35px;
+  font-size: 2.1875em;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
@@ -327,7 +356,7 @@ ul li:hover ul {
     color: white;
     padding-top: 70px;
     text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
   
@@ -335,7 +364,7 @@ ul li:hover ul {
 .statement h3 {
   color: white;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
-  font-size: 20px;
+  font-size: 1.25;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
@@ -345,7 +374,7 @@ ul li:hover ul {
 .statement p {
 margin-right: 675px;
 margin-top: -350px;
-font-size: 21px;
+font-size: 1.3125em;
 font-weight: 300;
 text-align: block;
 font-family: 'Roboto', sans-serif;
@@ -393,14 +422,14 @@ text-decoration: underline;
   padding-left: 0px;
   text-align: left;
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 0.75em;
   color: grey;
 }
 
 .copyrights p:nth-child(2){
   text-align: right;
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 0.75em;
   margin-top: -30px;
 }
 .copyrights p:nth-child(2) a{
@@ -441,7 +470,7 @@ text-decoration: underline;
   color: grey;
   margin-bottom: 1px;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 .footer a {
@@ -450,7 +479,7 @@ text-decoration: underline;
   display: inline-block;
   padding: 1px;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .footer a:hover {
   color: white;
@@ -466,7 +495,7 @@ text-decoration: underline;
   color: grey;
   margin-bottom: 1px;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: bold;
 }
 
@@ -549,7 +578,7 @@ opacity: 0.5;
 
 #email {
   color: white;
-  font-size: 18px;
+  font-size: 1.125em;
   margin-left: -9px;
 }
 #email a {
@@ -574,7 +603,7 @@ opacity: 0.5;
  margin-top: 90px;
  color: white;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
-  font-size: 35px;
+  font-size: 2.1875em;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
@@ -586,7 +615,7 @@ opacity: 0.5;
  margin-top: 90px;
  color: white;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
-  font-size: 35px;
+  font-size: 2.1875em;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
@@ -603,7 +632,7 @@ span p {
   margin-top: -90px;
   color: white;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
@@ -615,7 +644,7 @@ span p {
   margin-right: 720px;
   padding-left: 1px;
   text-align:justify;
-  font-size: 21px;
+  font-size: 1.3125em;
   font-weight: 300;
   text-align: block;
   font-family: 'Roboto', sans-serif;
@@ -672,12 +701,12 @@ span p {
 }
 
 .white-section h3 {
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 200;
 }
 
 .white-section h2 {
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 .about-container {
@@ -695,7 +724,7 @@ span p {
 }
 
 .projects-container h3 {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 300;
   border-top: 2px solid #ebdf9d;
   margin-bottom: 0;
@@ -703,13 +732,13 @@ span p {
   }
 
 .projects-container span {
-  font-size: 15px;
+  font-size: 0.8125em;
   font-weight: 300;
   color: #7f8c8d;
 }
 
 .projects-container p{
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 .services-container {
@@ -725,22 +754,27 @@ span p {
 }
 
 .leadership-roles h2 {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 300;
 }
 
 .leadership-roles span {
-  font-size: 15px;
+  font-size: 0.9375em;
   font-weight: 300;
   color: #7f8c8d;
   border-top: 2px solid #ebdf9d;
 }
 
 .leadership-roles p {
-  font-size: 13px;
+  font-size: 0.8125em;
 }
 
 .services-contact-us {
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 550;
+}
+
+.container-all {
+  width: 1000px;
+  margin: auto;
 }
