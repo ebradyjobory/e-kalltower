@@ -803,6 +803,14 @@ span p {
   font-weight: 550;
 }
 
+.services-contact-us a {
+  font-size: 0.875em;
+  font-weight: 550;
+  background-color: #FFFF99;
+  text-decoration: none;
+  color: #2c3e50;
+}
+
 .container-all {
   width: 1000px;
   margin: auto;
