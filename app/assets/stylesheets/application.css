@@ -202,28 +202,21 @@ span {
 }
 
 #glow:hover {
--webkit-stroke-width: 2.3px;
-   -webkit-stroke-color: #FFFFFF;
-   -webkit-fill-color: #FFFFFF;
-   text-shadow: 1px 0px 5px yellow;
-   -webkit-transition: width 0.3s; /*Safari & Chrome*/
-   transition: width 0.3s;
-   -moz-transition: width 0.3s; /* Firefox 4 */
-   -o-transition: width 0.3s; /* Opera */
+cursor: pointer;
 }
 
 .proj {
   color: black;
 }
 .projects-container h3:hover {
-  -webkit-stroke-width: 2.3px;
+ /* -webkit-stroke-width: 2.3px;
    -webkit-stroke-color: #FFFFFF;
    -webkit-fill-color: #FFFFFF;
    text-shadow: 1px 0px 5px yellow;
    -webkit-transition: width 0.3s; /*Safari & Chrome*/
    transition: width 0.3s;
    -moz-transition: width 0.3s; /* Firefox 4 */
-   -o-transition: width 0.3s; /* Opera */
+   -o-transition: width 0.3s; /* Opera */*/
 }
 
 nth-last-child(4){
@@ -464,7 +457,7 @@ text-decoration: underline;
 .copyrights p:nth-child(2){
   text-align: right;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.75em;
+  font-size: 1.0em;
   margin-top: -30px;
 }
 .copyrights p:nth-child(2) a{
@@ -711,7 +704,7 @@ span p {
   opacity: 0.85;
 }
 
-.white-section a {
+#mail a {
   background-color: #FFFF99;
   color: #2c3e50;
   text-decoration: none;
