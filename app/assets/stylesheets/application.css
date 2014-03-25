@@ -465,7 +465,7 @@ text-decoration: underline;
   color: black;
 }
 .copyrights p:nth-child(2) a:hover{
-  color: blue;
+  color: black;
 }
 
 /*.credit {
@@ -533,6 +533,7 @@ text-decoration: underline;
   padding-right: 0%;
   color: grey;
   font-family: 'Roboto', sans-serif;
+  font-size: 0.875em;
 }
 
 .engineering {
@@ -748,7 +749,7 @@ span p {
 }
 
 .projects-container {
-  padding-bottom: 42%
+  padding-bottom: 43%
 }
 
 .projects-container h3 {
