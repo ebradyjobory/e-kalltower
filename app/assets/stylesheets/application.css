@@ -209,19 +209,9 @@ cursor: pointer;
   color: black;
 }
 .projects-container h3:hover {
- /* -webkit-stroke-width: 2.3px;
-   -webkit-stroke-color: #FFFFFF;
-   -webkit-fill-color: #FFFFFF;
-   text-shadow: 1px 0px 5px yellow;
-   -webkit-transition: width 0.3s; /*Safari & Chrome*/
-   transition: width 0.3s;
-   -moz-transition: width 0.3s; /* Firefox 4 */
-   -o-transition: width 0.3s; /* Opera */*/
+ cursor: pointer;
 }
 
-nth-last-child(4){
-  color: blue;
-}
 
 span:hover {
   color: white;
@@ -270,6 +260,8 @@ iframe {
   margin-top: -15%;
   padding-top: 2%;
   margin-bottom: -1%;
+  
+  min-width: 90%
 }
 
 .nav-links a:hover {
@@ -285,7 +277,7 @@ iframe {
 ul li ul {
   padding: 0;
   position: absolute;
-  top: 48px;
+  top: 50px;
   left: 17px;
   width: 150px;
   display: none;
