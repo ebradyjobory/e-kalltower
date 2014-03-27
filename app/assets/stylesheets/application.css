@@ -39,7 +39,7 @@ background-image {
 }
 
 body#home-page {
-  background-image: url('construction2.jpg');
+  background-image: url('main3.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: contain;
@@ -48,7 +48,7 @@ body#home-page {
 }
 
 body#contact-page {
-  background-image: url('combo.jpg');
+  background-image: url('construction2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: contain;
@@ -66,7 +66,7 @@ body#about-page {
 }
 
 body#projects-page {
-  background-image: url('projects.jpg');
+  background-image: url('./structure.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: contain;
