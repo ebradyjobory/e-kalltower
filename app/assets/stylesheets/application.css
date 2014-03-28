@@ -76,7 +76,7 @@ body#projects-page {
 }
 
 body#services-page {
-  background-image: url('./structure.jpg');
+  background-image: url('services2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: contain;
@@ -269,6 +269,13 @@ iframe {
 }
 
 
+body.about a.about,
+body.project a.project,
+body.service a.service,
+body.contact a.contact { 
+  border-top: 2px solid #ebdf9d;
+
+}
 
 /*ul li:hover {
   background: #555;

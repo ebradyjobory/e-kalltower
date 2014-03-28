@@ -15,13 +15,14 @@
 //= require turbolinks
 //= require_tree .
 
+// var myVar = "red";
+
+// console.log(typeof myVar === "undefined");
+// console.log(myVar === undefined);
+
 
 $(document).ready(function(){
 $( "h3, span" ).click(function() {
   $(this).next('p').toggle();
-  $(this).addClass('.arrow');
   });
-
-
 });
-
