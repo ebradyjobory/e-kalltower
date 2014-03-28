@@ -15,13 +15,10 @@
 //= require turbolinks
 //= require_tree .
 
+// var myVar = "red";
 
-
-
-var myVar = "red";
-
-console.log(typeof myVar === "undefined");
-console.log(myVar === undefined);
+// console.log(typeof myVar === "undefined");
+// console.log(myVar === undefined);
 
 
 $(document).ready(function(){

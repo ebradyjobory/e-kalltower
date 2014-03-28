@@ -3,14 +3,7 @@
   <head>
       <title><%= full_title(yield(:title))%></title>
       <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-      <%= javascript_include_tag "application", "data-turbolinks-track" => false %>
-       <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-       <script src="jquery.js"></script>
-       <script src="application.js"></script>
-       <script type="text/javascript" src="js/jquery.js"></script>
-       <script type="text/javascript" src="js/jquery.js"></script>
-       <script type="text/javascript" src="js/jquery-lightbox.js"></script>
-       <script type="text/javascript" src="js/scripts.js"></script>
+      <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
       <%= csrf_meta_tags %>
       <link href='http://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -18,7 +11,7 @@
         <!-- <nav class="navbar-brand"> --> 
         <div class="header">
           <div class="logo">
-          <%= link_to image_tag("logo3.png", :size => "150x50", :alt => 'logo'), root_path %>
+          <%= link_to image_tag("logo3.png", :size => "150x50", :alt => 'logo', :class => "gallery"), root_path %>
           </div>
    </head>
   <body>
@@ -39,7 +32,7 @@
             </ul> -->
         </div>
     </div>
-         <div class="container">
+       <div class="container">
            <%= yield %>
          </div>
            
