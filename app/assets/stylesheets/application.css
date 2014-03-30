@@ -1,4 +1,10 @@
 
+/*
+ *= require_self
+ *= require fancybox
+ *= require_tree .
+ */
+
 .logo {
   margin-left: 20px;
   margin-top: 1px;
@@ -814,3 +820,7 @@ span p {
   width: 1000px;
   margin: auto;
 }
+
+
+/* Lightbox 
+================*/
