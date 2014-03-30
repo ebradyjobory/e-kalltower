@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require fancybox
 
 // var myVar = "red";
 
@@ -26,3 +27,15 @@ $( "h3, span" ).click(function() {
   $(this).next('p').toggle();
   });
 });
+
+/* FancyBox 
+================= */
+
+$(document).ready(function() {
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: ''
+	});
+});
+
+

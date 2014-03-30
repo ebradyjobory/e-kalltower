@@ -5,6 +5,8 @@ ruby '2.0.0'
 gem 'rails', '4.0.3'
 gem 'paperclip'
 
+gem 'fancybox2-rails', '~> 0.2.8'
+
 group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
