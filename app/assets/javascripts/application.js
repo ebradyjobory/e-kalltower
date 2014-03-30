@@ -24,6 +24,7 @@
 
 $(document).ready(function(){
 $( "h3, span" ).click(function() {
+  $('p').hide();
   $(this).next('p').toggle();
   });
 });

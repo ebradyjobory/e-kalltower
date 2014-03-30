@@ -821,6 +821,10 @@ span p {
   margin: auto;
 }
 
+.projects-container img {
+  border: solid black 1px;
+}
+
 
 /* Lightbox 
 ================*/
