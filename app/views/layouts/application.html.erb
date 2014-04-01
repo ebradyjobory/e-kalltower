@@ -15,12 +15,28 @@
           </div>
    </head>
   <body>
-          <div class="nav-links">
-            <ul class="links">
+	       <% if  I18n.locale == :en %>
+            <div class="nav-links">
+              <ul class="links">
               <li><a class="about" href="/about">ABOUT</a></li>
               <li><a class="project" href="/projects">PROJECTS</a></li>
               <li><a class="service" href="/services">SERVICES</a></li>
               <li><a class="contact" href="/contact">CONTACT</a></li>
+			  <%elsif%> 
+	          <div class="nav-links">
+	            <ul class="links">
+	              <li><a class="about" href="/about">من نحن؟</a></li>
+	              <li><a class="project" href="/projects">المشاريع</a></li>
+	              <li><a class="services" href="/services">الخدمات</a></li>
+	              <li><a class="contact" href="/contact">اتصل بنا</a></li>
+			  <%end%>
+			  
+			  
+			  <% if I18n.locale == I18n.default_locale %>
+			    <%= link_to "English", :locale=>'en'%>
+			  <% else %>
+			    <%= link_to "العربية", :locale=>'ar'%>
+			  <%end%>
                <!--  <ul id="drop-list">
                   <li><a href="/structural">STRUCTURAL</a></li>
                   <li><a href="/mechanical">MECHANICAL</a></li>
@@ -36,7 +52,7 @@
            <%= yield %>
          </div>
            
-           <% if current_page?('/') %>
+           <% if current_page? root_path %>
            <%elsif%>    
            <div class="white-section">
              <%= yield :section %>

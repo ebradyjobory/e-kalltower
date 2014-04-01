@@ -397,7 +397,7 @@ ul li:hover ul {
 .statement h3 {
   color: white;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
-  font-size: 1.25;
+  font-size: 1.25px;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
@@ -821,8 +821,10 @@ span p {
   margin: auto;
 }
 
-.projects-container img {
-  border: solid black 1px;
+.fancybox img {
+	padding: 1px;
+	margin: 1px;
+	
 }
 
 
