@@ -1,4 +1,9 @@
+
+
 <% provide(:title, 'Contact') %>
+
+<% if  I18n.locale == :en %>
+
 <body id="contact-page", class="contact">
 <div class="statement">
 	<div id="shadow">
@@ -6,6 +11,17 @@
       <p class="statement"><span>How can we help you with your general building or construction management project?</span></p>
     </div>
   </div>
+  <%else%>
+
+  <body id="contact-page", class="contact-arabic">
+  <div class="statement">
+  	<div id="shadow">
+        <h2 class="statement">دعونا نبدأ العمل</h2>
+        <p class="statement"><span>  كيف يمكننا مساعدتك في البناء العام الخاص بك أو إدارة المشروع؟</span></p>
+      </div>
+    </div>
+	
+	<%end%>
  
 <% content_for :section do %>
 <% render 'layouts/contact' %>

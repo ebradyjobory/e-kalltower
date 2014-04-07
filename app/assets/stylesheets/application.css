@@ -261,13 +261,12 @@ iframe {
   max-width: 100%;
 }
 
-.nav-links {
+.nav-links  {
   margin-left: 25%;
-  margin-top: -15%;
+  margin-top: -18%;
   padding-top: 2%;
-  margin-bottom: -1%;
-  
-  min-width: 90%
+  margin-bottom: -1%; 
+  min-width: 100%;
 }
 
 .nav-links a:hover {
@@ -824,6 +823,38 @@ span p {
 .fancybox img {
 	padding: 1px;
 	margin: 1px;
+
+}
+
+.language  {
+	text-decoration: none;
+	float: right;
+	margin-right: -550px;
+	margin-top: -55px;
+
+}
+
+.arabic-links {
+	margin-left: 600px;
+	font-size: 20px;
+	margin-top: -107px;
+}
+
+.contact-arabic h2 {
+	margin-left: 75%;
+	
+}
+.contact-arabic span {
+	position: absolute;
+	margin-left: 50%;
+	
+}
+
+.facebook-arabic h2{
+	position: relative;
+	margin-left: 0.5%;
+	
+	
 	
 }
 

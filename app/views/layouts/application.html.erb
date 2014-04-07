@@ -15,28 +15,31 @@
           </div>
    </head>
   <body>
+	  <div class="language">
+	  <% if I18n.locale == I18n.default_locale %>
+	  <%= link_to "العربية", :locale=>'ar'%>  
+	  <% else %>
+	  <%= link_to "English", :locale=>'en'%>	    
+	  <%end%>
+	  	  
+      </div>
 	       <% if  I18n.locale == :en %>
             <div class="nav-links">
               <ul class="links">
-              <li><a class="about" href="/about">ABOUT</a></li>
-              <li><a class="project" href="/projects">PROJECTS</a></li>
-              <li><a class="service" href="/services">SERVICES</a></li>
-              <li><a class="contact" href="/contact">CONTACT</a></li>
-			  <%elsif%> 
-	          <div class="nav-links">
+			  <li><%= link_to "ABOUT", about_path, :class => 'about' %></li>
+			  <li><%= link_to "PROJECTS", projects_path, :class => 'project'%> </li>
+			  <li><%= link_to "SERVICES", services_path, :class => 'service'%> </li>
+			  <li><%= link_to "CONTACT", contact_path, :class => 'contact'%> </li> 
+			  <%else%> 
+	          <div class="nav-links arabic-links">
 	            <ul class="links">
-	              <li><a class="about" href="/about">من نحن؟</a></li>
-	              <li><a class="project" href="/projects">المشاريع</a></li>
-	              <li><a class="services" href="/services">الخدمات</a></li>
-	              <li><a class="contact" href="/contact">اتصل بنا</a></li>
+				  <li><%= link_to "اتصل بنا", contact_path, :class => 'contact' %></li>
+				  <li><%= link_to "الخدمات", services_path, :class => 'service' %></li>
+				  <li><%= link_to "المشاريع", projects_path, :class => 'project' %></li>
+				  <li><%= link_to "من نحن؟", about_path, :class => 'about' %></li>
+				  
 			  <%end%>
-			  
-			  
-			  <% if I18n.locale == I18n.default_locale %>
-			    <%= link_to "English", :locale=>'en'%>
-			  <% else %>
-			    <%= link_to "العربية", :locale=>'ar'%>
-			  <%end%>
+			 
                <!--  <ul id="drop-list">
                   <li><a href="/structural">STRUCTURAL</a></li>
                   <li><a href="/mechanical">MECHANICAL</a></li>
@@ -60,6 +63,7 @@
            <%end%>
 
 
+     <% if  I18n.locale == :en %>
          <div class="footer">
          <div class="footer-columns">
             <ul>
@@ -86,6 +90,37 @@
             <p><strong>&copy</strong> 2014 E-Kall Tower Company. All Rights Reserved.</p>
             <p>Designed, developed, maintained by <a href="http://cuneiform.io" target="_blank">cuneiform.io</a></p>
           </div>
+		  
+		  <%else%>
+		  
+          <div class="footer">
+          <div class="footer-columns">
+             <ul>
+               <li><a href="/">ألرئيسية</a></li>
+               <li><a href="/about">من نحن؟</a></li> 
+               <li><a href="/projects">المشاريع</a></li>
+               <li><a href="/services">الخدمات</a></li>
+               <li><a href="/contact">إتصل بنا</a></li>   
+             </ul>
+           </div>
+
+           <div class="footer-columns">
+             <p><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></p>
+             <p>+964.770.700.0200</p>
+             <p>Arbil | Sulaimaniyah | Baghdad</p>
+             <p><%= link_to image_tag("facebook.png", :size => "20x20", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></p>
+           </div>
+
+           <div class="footer-columns">
+            
+           </div>
+
+           <div class="copyrights">
+             <p><strong>&copy</strong> 2014 E-Kall Tower Company. All Rights Reserved.</p>
+             <p>Designed, developed, maintained by <a href="http://cuneiform.io" target="_blank">cuneiform.io</a></p>
+           </div>
+		   
+		   <%end%>
     
           </body>
           </html>
