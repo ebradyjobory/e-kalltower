@@ -1,4 +1,7 @@
 <% provide(:title, 'About') %>
+
+<% if  I18n.locale == :en %>
+
 <body id="about-page", class="about">
 
 <div class="statement">
@@ -8,6 +11,19 @@
     </div>
   </div>
 </body>
+
+<%else%>
+<body id="about-page", class="about">
+
+<div class="statement statement-arabic-about">
+	<div id="shadow">
+      <h2 class="statement s-arabic-about">نحن شركة إيكال </h2>
+      <p class="statement s-arabic-about"><span>تأسست في عام 2007 من قبل خبراء في الهندسة وإدارة الإنشاءات <br>في استجابة للنمو الإقتصادي غير المسبوق في العراق<span></p/>
+    </div>
+  </div>
+</body>
+
+<%end%>
 
 <% content_for :section do %>
 <% render 'layouts/about' %>

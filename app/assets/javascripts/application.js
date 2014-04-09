@@ -23,11 +23,20 @@
 
 
 $(document).ready(function(){
-$( "h3, span" ).click(function() {
-  $('p').hide();
-  $(this).next('p').toggle();
-  });
+	$( "h3" ).click(function() {
+	$(this).next('p').toggle();
+	  });
+  
+
+
+$('.glow').click(function(){
+    $(this).next('.pabout').toggle();
+    });
+	
+
 });
+
+
 
 /* FancyBox 
 ================= */
@@ -35,8 +44,7 @@ $( "h3, span" ).click(function() {
 $(document).ready(function() {
 	$(".fancybox").fancybox({
 		openEffect	: 'none',
-		closeEffect	: ''
+		closeEffect	: 'none'
 	});
 });
-
 

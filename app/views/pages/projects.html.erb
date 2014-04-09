@@ -1,6 +1,8 @@
 <% provide(:title, 'Projects') %>
 <body id="projects-page" , class="project">
 
+<% if  I18n.locale == :en %>
+
 	<div class="statement">
 	<div id="shadow">
       <h2 class="statement">We operate in Kurdistan and Greater Iraq.</h2>
@@ -8,6 +10,20 @@
     </div>
   </div>
 </body>
+
+<%else%>
+
+	<div class="statement statement-projects-ar">
+	<div id="shadow">
+      <h2 class="statement">نعمل في كردستان والعراق</h2>
+      <p class="statement"><span>القطاع العام<br>دولي<br>القطاع الخاص<br></span></p>
+    </div>
+  </div>
+</body>
+
+<%end%>
+
+
 
 <% content_for :section do %>
 <% render 'layouts/projects' %>

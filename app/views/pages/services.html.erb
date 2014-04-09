@@ -1,5 +1,8 @@
 <% provide(:title, 'Services') %>
 
+<% if  I18n.locale == :en %>
+
+
 <body id="services-page" , class="service">
 
 
@@ -11,6 +14,27 @@
   </div>
 </body>
 </div>
+
+<%else%>
+
+<body id="services-page" , class="service">
+
+
+<div class="statement statement-services-ar">
+	<div id="shadow">
+      <h2 class="statement">أكثر من مجرد إدارة إنشاءات </h2>
+      <p class="statement"><span>الهندسة المدنية<br>الهندسة الكهربائية<br>الهندسة الميكانيكية<br>الهندسة الكومبو</span></p>
+    </div>
+  </div>
+</body>
+</div>
+
+
+
+
+
+
+<%end%>
 
 <% content_for :section do %>
 <% render 'layouts/services' %>

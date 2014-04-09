@@ -10,30 +10,48 @@
       <meta charset="utf-8"/>
         <!-- <nav class="navbar-brand"> --> 
         <div class="header">
+			<% if  I18n.locale == :en %>
           <div class="logo">
           <%= link_to image_tag("logo3.png", :size => "150x50", :alt => 'logo', :class => "gallery"), root_path %>
           </div>
+		  <%else%>
+          <div class="logo-arabic">
+          <%= link_to image_tag("logo3.png", :size => "150x50", :alt => 'logo', :class => "gallery"), root_path %>
+          </div>
+		  <%end%>
    </head>
   <body>
-	  <div class="language">
-	  <% if I18n.locale == I18n.default_locale %>
-	  <%= link_to "العربية", :locale=>'ar'%>  
-	  <% else %>
-	  <%= link_to "English", :locale=>'en'%>	    
+	  <% if  I18n.locale == :en %>
+		  <div class="language">
+		  <% if I18n.locale == I18n.default_locale %>
+		  <%= link_to "العربية", :locale=>'ar'%>  
+		  <% else %>
+		  <%= link_to "English", :locale=>'en'%>	    
+		  <%end%>
+	  
+	  <%else%>
+	  
+		  <div class="language language-arabic">
+		  <% if I18n.locale == I18n.default_locale %>
+		  <%= link_to "العربية", :locale=>'ar'%>  
+		  <% else %>
+		  <%= link_to "English", :locale=>'en'%>	    
+		  <%end%>
+	  
 	  <%end%>
 	  	  
       </div>
 	       <% if  I18n.locale == :en %>
-            <div class="nav-links">
+            <div class="nav-links-en">
               <ul class="links">
 			  <li><%= link_to "ABOUT", about_path, :class => 'about' %></li>
 			  <li><%= link_to "PROJECTS", projects_path, :class => 'project'%> </li>
 			  <li><%= link_to "SERVICES", services_path, :class => 'service'%> </li>
 			  <li><%= link_to "CONTACT", contact_path, :class => 'contact'%> </li> 
 			  <%else%> 
-	          <div class="nav-links arabic-links">
+	          <div class="nav-links-ar arabic-links">
 	            <ul class="links">
-				  <li><%= link_to "اتصل بنا", contact_path, :class => 'contact' %></li>
+				  <li><%= link_to "إتصل بنا", contact_path, :class => 'contact' %></li>
 				  <li><%= link_to "الخدمات", services_path, :class => 'service' %></li>
 				  <li><%= link_to "المشاريع", projects_path, :class => 'project' %></li>
 				  <li><%= link_to "من نحن؟", about_path, :class => 'about' %></li>
@@ -54,13 +72,18 @@
        <div class="container">
            <%= yield %>
          </div>
+		 
+		 
            
-           <% if current_page? root_path %>
-           <%elsif%>    
-           <div class="white-section">
-             <%= yield :section %>
-           </div>
-           <%end%>
+		   
+	           <% if current_page? root_path %>
+	           <%elsif%>    
+	           <div class="white-section">
+	             <%= yield :section %>
+	           </div>
+	           <%end%>
+			   
+		
 
 
      <% if  I18n.locale == :en %>

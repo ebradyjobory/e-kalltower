@@ -1,3 +1,6 @@
+<% if  I18n.locale == :en %>
+
+
 <div class="services-container">
 <div style="float: left; width: 25%;">
 <h3>Civil Engineering</h3>
@@ -40,3 +43,54 @@
 <p>Please <a href="/contact">contact us</a> to find out more about our other construction management services.</p>
 </div>
 </div>
+
+<%else%>
+
+
+
+<div class="services-container services-container-arabic">
+<div style="float: right; width: 25%;">
+<h3>الهندسة المدنية</h3>
+<ul>
+	<li>الإنشاءات</li>
+	<li><span>الإسكان</span></li>
+	<li><span>هياكل الصلب</span></li>
+	<li>خطوط الأنابيب</li>
+	<li>أسمنت</li>
+</div>
+
+<div style="float: right; width: 25%;">
+<h3>الهندسة الكهربائية</h3>
+<ul>
+<li>الطاقة العالية التوتر</li>
+<li>طاقة منخفضة التوتر</li>
+<li>لوحة التوزيع الكهربائية</li>
+<li>أعمدة إنارة الشوارع</li>
+<li>أنظمة إنذار الحريق</li>
+</ul>
+</div>
+
+<div style="float: right; width: 25%;">
+<h3>الهندسة الميكانيكية</h3>
+<ul>
+<li>نظم HVAC</li>
+<li>أنظمة مكافحة الحرائق</li>
+<li>العمل الكهروميكانيكية</li>
+</ul>
+</div>
+
+<div style="float: right; width: 25%;">
+<h3>هندسة الكومبو</h3>
+<ul>
+<li>أبراج الاتصالات</li>
+</ul>
+</div>
+
+<div style="float: right; position: absolute; width: 40%;" class="services-contact-us services-contact-us-arabic ">
+<p>من فضلك <a href="/contact">إتصل بنا</a> لمعرفة المزيد عن خدماتنا  </p>
+</div>
+</div>
+
+
+
+<%end%>
