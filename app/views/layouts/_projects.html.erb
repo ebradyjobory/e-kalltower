@@ -1,10 +1,14 @@
 
 <% if  I18n.locale == :en %>
 
+<!-- <div id="arrowright">
+	<%= image_tag('arrow_right')%>
+</div> -->
+
 <div class="projects-container">
 	<div style="float: left; width: 33%;">
-		<h2>Government</h2>
-			<h3 id="pro">Ministries of Defense, Housing/Construction<br>
+		<h2 id="test">Government</h2>
+			<h3 class="arrow">Ministries of Defense, Housing/Construction<br>
 			<span>Sulaimaniyah</span>
 			</h3>
 				<p style="display:none">
@@ -13,22 +17,23 @@
 					Steel warehouse structure<br>
 					Fuel station for large trucks<br>
 					<br>
-
-					<a class="fancybox" rel="gallery1" href="<%= asset_path( 'md1.jpg' ) %>" title="s">
-							<img src="<%= asset_path( 'md1.jpg' ) %>" height="42" width="42" alt="">
+				
+					     <a  class="fancybox" rel="gallery1" href="<%= asset_path( 'md1.jpg' ) %>" title="s">
+							<img src="<%= asset_path( 'md1.jpg' ) %>" height="42" width="42" alt=""></li>
 						</a>
 						<a class="fancybox" rel="gallery1" href="<%= asset_path( 'md2.jpg' ) %>" title="">
-							<img src="<%= asset_path( 'md2.jpg' ) %>" height="42" width="42" alt="">
+							<img src="<%= asset_path( 'md2.jpg' ) %>" height="42" width="42" alt=""></li>
 						</a>
-						<a class="fancybox" rel="gallery1" href="<%= asset_path( 'md3.jpg' ) %>" title="">
-							<img src="<%= asset_path( 'md3.jpg' ) %>" height="42" width="42" alt="">
+						 <a class="fancybox" rel="gallery1" href="<%= asset_path( 'md3.jpg' ) %>" title="">
+							<img src="<%= asset_path( 'md3.jpg' ) %>" height="42" width="42" alt=""></li>
 						</a>
 						<a class="fancybox" rel="gallery1" href="<%= asset_path( 'md4.jpg' ) %>" title="">
-							<img src="<%= asset_path( 'md4.jpg' ) %>" height="42" width="42" alt="">
+							<img src="<%= asset_path( 'md4.jpg' ) %>" height="42" width="42" alt=""></li>
 						</a>
+					
 			</p>
 	
-			<h3>Kurdistan Region Courthouse<br>
+			<h3 class="arrow">Kurdistan Region Courthouse<br>
 			<span>Sulaimaniyah</span>
 			</h3>
   				<p style="display:none">
@@ -51,7 +56,7 @@
 						</a>
 				</p>
 
-			<h3>Ministry of Housing and Construction<br>
+			<h3 class="arrow_short">Ministry of Housing and Construction<br>
 			<span>Zirguez</span>
 			</h3>
 
@@ -81,7 +86,7 @@
 	<div style="float: left; width: 33%;">
 		<h2>International</h2>
 
-			<h3>United States Military<br>
+			<h3 class="arrow_short">United States Military<br>
 			<span>Baghdad</span>
 			</h3>
 
@@ -89,7 +94,7 @@
 				Erected a steel structure, sandwich panel and roll up garage doors for a motor pool at the Victory Base Center
 				</p>
 
-			<h3>Dyncorp International<br>
+			<h3 class="arrow">Dyncorp International<br>
 			<span>Sulaimaniyah</span>
 			</h3>
 				<p style="display:none">
@@ -101,7 +106,7 @@
 		<div style="float: left; width: 33%;">
 		<h2>Private Sector</h2>
 
-			<h3>Tishknet<br>
+			<h3 class="arrow">Tishknet<br>
 				<span>Sulaimaniyah</span>
 			</h3>
 
@@ -116,7 +121,7 @@
 <div class="projects-container-ar">
 	<div style="float: left; width: 33%;">
 		<h2>القطاع العام</h2>
-			<h3 id="pro">وزارتي الدفاع والإسكان / البناء<br>
+			<h3 class="arrow">وزارتي الدفاع والإسكان / البناء<br>
 			<span>السليمانيه</span>
 			</h3>
 				<p style="display:none">
@@ -140,7 +145,7 @@
 						</a>
 			</p>
 	
-			<h3>دار القضاء في إقليم كردستان <br>
+			<h3 class="arrow">دار القضاء في إقليم كردستان <br>
 			<span>السليمانيه</span>
 			</h3>
   				<p style="display:none">
@@ -163,7 +168,7 @@
 						</a>
 				</p>
 
-			<h3>وزارة الإسكان والتعمير<br>
+			<h3 class="arrow">وزارة الإسكان والتعمير<br>
 			<span>السليمانيه</span>
 			</h3>
 
@@ -193,7 +198,7 @@
 	<div style="float: left; width: 33%;">
 		<h2>عالمياً</h2>
 
-			<h3>الجيش الأمريكي<br>
+			<h3 class="arrow">الجيش الأمريكي<br>
 			<span>بغداد</span>
 			</h3>
 
@@ -201,7 +206,7 @@
 			إقامت الهيكل الصلب، ساندوج بانل و ابواب المرآب السيارات في مركز قاعدة فيكتوري
 				</p>
 
-			<h3>دايناكورب<br>
+			<h3 class="arrow">دايناكورب<br>
 			<span>السليمانيه</span>
 			</h3>
 				<p style="display:none">
@@ -213,7 +218,7 @@
 		<div style="float: left; width: 33%;">
 		<h2>القطاع الخاص</h2>
 
-			<h3>تشكنت<br>
+			<h3 class="arrow">تشكنت<br>
 			<span>السليمانيه</span>
 			</h3>
 
