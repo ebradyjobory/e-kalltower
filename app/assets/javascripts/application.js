@@ -83,8 +83,12 @@ $(document).ready(function() {
 
 //Define two arrows images, one points right and other down
 var $arrowRight = $('<div id="arrowright"></div>');
+var $arrowRightAr = $('<div id="arrowright-ar"></div>');
+var $arrowRightBaghdadAr = $('<div id="arrowright-baghdad-ar"></div>');
 var $arrowRightAboutOmer = $('<div id="arrow_about_omer"></div>');
 var $arrowRightAboutErica = $('<div id="arrow_about_erica"></div>');
+var $arrowRightAboutOmerAr= $('<div id="arrow_about_omer_ar"></div>');
+var $arrowRightAboutEricaAr = $('<div id="arrow_about_erica_ar"></div>');
 var $arrowRightShort = $('<div id="arrowright_short"></div>');
 var $arrowRightBaghdad = $('<div id="arrowright_baghdad"></div>');
 
@@ -96,6 +100,17 @@ var $arrowRightBaghdad = $('<div id="arrowright_baghdad"></div>');
 	$arrowRight.remove();
 	});
 	
+  	$(".arrow-ar").hover(function(){
+	$(this).prepend($arrowRightAr);}, function(){
+	$arrowRightAr.remove();
+	});
+	
+  	$(".arrow-baghdad-ar").hover(function(){
+	$(this).prepend($arrowRightBaghdadAr);}, function(){
+	$arrowRightBaghdadAr.remove();
+	});
+	
+	
 	
   	$(".arrow_about_omer").hover(function(){
 	$(this).prepend($arrowRightAboutOmer);}, function(){
@@ -105,6 +120,16 @@ var $arrowRightBaghdad = $('<div id="arrowright_baghdad"></div>');
   	$(".arrow_about_erica").hover(function(){
 	$(this).prepend($arrowRightAboutErica);}, function(){
 	$arrowRightAboutErica.remove();
+	});
+	
+  	$(".arrow_about_omer_ar").hover(function(){
+	$(this).prepend($arrowRightAboutOmerAr);}, function(){
+	$arrowRightAboutOmerAr.remove();
+	});
+	
+  	$(".arrow_about_erica_ar").hover(function(){
+	$(this).prepend($arrowRightAboutEricaAr);}, function(){
+	$arrowRightAboutEricaAr.remove();
 	});
 	
 	
