@@ -5,6 +5,11 @@
  *= require_tree .
  */
 
+* {
+	padding:0;
+	margin:0;
+}
+
 .logo {
   margin-left: 20px;
   margin-top: 1px;
@@ -30,9 +35,9 @@ background-image {
 .header {
   background-image: linear-gradient(#222222, #111111);
   background-repeat: repeat no-repeat;
-  padding-right: 622px;
-  padding-top: 9px;
-  padding-bottom: 1px;
+  padding-right: 50%;
+  padding-top: 0.5%;
+  padding-bottom: -0.7%;
 }
 
 .header a:hover {
@@ -89,8 +94,7 @@ body#services-page {
   background-image: url('services2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain;
-  background-size: 100%;
+  background-size: cover;
   margin: 0;
 }
 
@@ -233,9 +237,9 @@ h3 {
   font-size: 0.9375em;
   font-weight: 500;
   display: inline-block;
-  margin-right: -4px;
+  margin-right: -4%;
   position: relative;
-  padding: 15px 20px;
+  padding: 4% 5%;
   cursor: pointer;
 /*  -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -264,9 +268,14 @@ iframe {
 
 .nav-links-en  {
   margin-left: 25%;
-  margin-top: -18%;
+  margin-top: -15%;
   padding-top: 5%;
   margin-bottom: 4%; 
+}
+
+.links {
+	margin-left: 4%;
+	margin-right: auto;
 }
 
 .nav-links-en li a {
@@ -476,7 +485,7 @@ text-decoration: underline;
 
 .copyrights {
   position: relative;
-  margin-top: 150px;
+  margin-top: 10%;
   margin-left: 40px;
   margin-right: 40px;
   border-top: .1em solid grey;
@@ -488,11 +497,15 @@ text-decoration: underline;
   color: grey;
 }
 
+#facebook {
+	margin-top: 2%;
+}
+
 .copyrights p:nth-child(2){
   text-align: right;
   font-family: 'Roboto', sans-serif;
   font-size: 1.0em;
-  margin-top: -30px;
+  margin-top: -1.5%;
 }
 .copyrights p:nth-child(2) a{
   background-color: #FFFF99;
@@ -566,6 +579,7 @@ text-decoration: underline;
   float: left;
   width: 25%%;
   padding-right: 0%;
+  padding-left: 1%;
   color: grey;
   font-family: 'Roboto', sans-serif;
   font-size: 0.875em;
@@ -774,7 +788,7 @@ span p {
 }
 
 .about-container {
-  margin-bottom: ;
+  margin-bottom: 0%;
   resize:both;
   overflow:auto;
   text-align: right;
@@ -784,6 +798,7 @@ span p {
 
 .about-columns {
   float: left;
+  margin-bottom: 2%;
   width: 31%;
   padding-right: 2%;
 }
@@ -861,7 +876,8 @@ span p {
 }
 
 .services-container {
-  padding-bottom: 22%;
+  padding-bottom: 20%;
+  margin: auto;
 }
 
 .contact-container {
@@ -902,8 +918,8 @@ span p {
 .services-contact-us {
   font-size: 0.875em;
   font-weight: 550;
-  margin-top: 16%;
-  margin-left: 65%;
+  margin-top: 3%;
+  margin-left: 0%;
 }
 
 .services-contact-us a {
