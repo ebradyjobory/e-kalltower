@@ -83,8 +83,10 @@ $(document).ready(function() {
 
 //Define two arrows images, one points right and other down
 var $arrowRight = $('<div id="arrowright"></div>');
-var $arrowRightAbout = $('<div id="arrowright_about"></div>');
+var $arrowRightAboutOmer = $('<div id="arrow_about_omer"></div>');
+var $arrowRightAboutErica = $('<div id="arrow_about_erica"></div>');
 var $arrowRightShort = $('<div id="arrowright_short"></div>');
+var $arrowRightBaghdad = $('<div id="arrowright_baghdad"></div>');
 
 
 // Triger the hover function when move mouse to h3
@@ -95,14 +97,25 @@ var $arrowRightShort = $('<div id="arrowright_short"></div>');
 	});
 	
 	
-  	$(".arrow_about").hover(function(){
-	$(this).prepend($arrowRightAbout);}, function(){
-	$arrowRightAbout.remove();
+  	$(".arrow_about_omer").hover(function(){
+	$(this).prepend($arrowRightAboutOmer);}, function(){
+	$arrowRightAboutOmer.remove();
 	});
+	
+  	$(".arrow_about_erica").hover(function(){
+	$(this).prepend($arrowRightAboutErica);}, function(){
+	$arrowRightAboutErica.remove();
+	});
+	
 	
   	$(".arrow_short").hover(function(){
 	$(this).prepend($arrowRightShort);}, function(){
 	$arrowRightShort.remove();
+	});
+	
+  	$(".arrow_baghdad").hover(function(){
+	$(this).prepend($arrowRightBaghdad);}, function(){
+	$arrowRightBaghdad.remove();
 	});
 	
 	
