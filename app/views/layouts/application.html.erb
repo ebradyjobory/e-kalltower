@@ -8,6 +8,7 @@
 	  
       <link href='http://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	  <link href='http://fonts.googleapis.com/earlyaccess/droidarabickufi.css'rel='stylesheet' type='text/css'>
       <meta charset="utf-8"/>
         <!-- <nav class="navbar-brand"> --> 
         <div class="header">
@@ -52,12 +53,12 @@
 			  <li><%= link_to "SERVICES", services_path, :class => 'service'%> </li>
 			  <li><%= link_to "CONTACT", contact_path, :class => 'contact'%> </li> 
 			  <%else%> 
-	          <div class="nav-links-ar arabic-links">
-	            <ul class="links", id="nav">
+	          <div class="nav-links-ar">
+	            <ul class="links-ar">
 				  <li><%= link_to "إتصل بنا", contact_path, :class => 'contact' %></li>
 				  <li><%= link_to "الخدمات", services_path, :class => 'service' %></li>
 				  <li><%= link_to "المشاريع", projects_path, :class => 'project' %></li>
-				  <li><%= link_to "من نحن؟", about_path, :class => 'about' %></li>
+				  <li><%= link_to "من نحن", about_path, :class => 'about' %></li>
 				  
 			  <%end%>
 			 
@@ -123,7 +124,7 @@
           <div class="footer-columns">
              <ul>
                <li><a href="/">ألرئيسية</a></li>
-               <li><a href="/about">من نحن؟</a></li> 
+               <li><a href="/about">من نحن</a></li> 
                <li><a href="/projects">المشاريع</a></li>
                <li><a href="/services">الخدمات</a></li>
                <li><a href="/contact">إتصل بنا</a></li>   
