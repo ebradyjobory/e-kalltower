@@ -137,7 +137,18 @@ iframe {
   padding: 4% 5%;
   cursor: pointer;
   text-decoration: none;
+  font-weight: normal;
+}
+
+.links {
+	margin-left: 4%;
+	margin-right: auto;
+}
+
+.nav-english {
+  text-decoration: none;
   color: #bdc3c7;
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
 }
 
@@ -159,21 +170,9 @@ iframe {
 	border-top: none;
 }
 
-.links {
-	margin-left: 4%;
-	margin-right: auto;
-}
-
 .links-ar {
 	margin-left: 4%;
 	margin-right: auto;
-}
-
-.links li a {
-  text-decoration: none;
-  color: #bdc3c7;
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
 }
 
 .links-ar li a {
