@@ -145,7 +145,7 @@ iframe {
 	margin-right: auto;
 }
 
-.nav-english {
+.links li a {
   text-decoration: none;
   color: #bdc3c7;
   font-family: 'Roboto', sans-serif;
