@@ -148,7 +148,7 @@ body#electrical-page {
 
 }
 .navbar-brand a {
-  color: white;
+  color: #ecf0f1;
   font-family: 'Roboto', sans-serif;
   margin: 2%;
   text-decoration: none;
@@ -174,7 +174,7 @@ cursor: pointer;
 }
 
 .proj {
-  color: black;
+  color: #333;
 }
 .projects-container h3:hover {
  cursor: pointer;
@@ -283,12 +283,12 @@ ul li ul {
   visibility: hidden;
 }
 .links li ul li a {
-  color: white;
+  color: #ecf0f1;
   text-decoration: none;
 }
 
 .links-ar li ul li a {
-  color: white;
+  color: #ecf0f1;
   text-decoration: none;
 }
 
@@ -424,7 +424,7 @@ ul li:hover ul {
 	margin-left: 0%;
 }
 .statement h2 {
-  color: white;
+  color: #ecf0f1;
   font-family: 'Roboto', sans-serif;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
   font-size: 2.1875em;
@@ -442,7 +442,7 @@ div.statement-ar {
 
 div.statement-ar h2 {
   font-family: 'Droid Arabic Kufi', serif;
-  color: white;
+  color: #ecf0f1;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
   font-size: 2em;
   font-weight: 400;
@@ -453,7 +453,7 @@ div.statement-ar h2 {
 }
 
 .statement-ar p span{
-    color: white;
+    color: #ecf0f1;
 	font-family: 'Droid Arabic Kufi', serif;
 	font-size: 1.1875em;
     background-color: #FFFF99;
@@ -478,7 +478,7 @@ div.statement-ar h2 {
 }
 
 .statement-projects {
-    color: white;
+    color: #ecf0f1;
     padding-top: 70px;
     text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
     font-size: 1.25em;
@@ -487,7 +487,7 @@ div.statement-ar h2 {
   
 }
 .statement h3 {
-  color: white;
+  color: #ecf0f1;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
   font-size: 1.25px;
   font-weight: 500;
@@ -503,20 +503,20 @@ font-size: 1.3125em;
 font-weight: 300;
 text-align: block;
 font-family: 'Roboto', sans-serif;
-color: white;
+color: #ecf0f1;
 text-shadow:rgba(0, 0, 0, 0.4) 0 1px 1px;
 line-height: 1.5;
 font-weight: 400;
 }
 .statement-p a {
-color: white;
+color: #ecf0f1;
 text-decoration: none;
 
 }
 
 
 .statement-p a:f {
-color: black;
+color: #333;
 text-decoration: underline;
 }
 
@@ -531,7 +531,7 @@ text-decoration: underline;
 }
 
 .statement p a {
-  color: white;
+  color: #ecf0f1;
   font-weight: 400;
 }
 .statement p a:hover {
@@ -615,7 +615,7 @@ text-decoration: underline;
   font-size: 0.875em;
 }
 .footer a:hover {
-  color: white;
+  color: #ecf0f1;
   transition: all 0.1s;
   -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
@@ -712,12 +712,12 @@ opacity: 0.5;
 }
 
 #email {
-  color: white;
+  color: #ecf0f1;
   font-size: 1.125em;
   margin-left: -9px;
 }
 #email a {
-  color: white;
+  color: #ecf0f1;
 }
 #email a:hover {
   text-decoration: underline;
@@ -736,7 +736,7 @@ opacity: 0.5;
 }*/
 #contact-statement h2 {
  margin-top: 90px;
- color: white;
+ color: #ecf0f1;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
   font-size: 2.1875em;
   font-weight: 500;
@@ -748,7 +748,7 @@ opacity: 0.5;
 
 #about-statement h2 {
  margin-top: 90px;
- color: white;
+ color: #ecf0f1;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
   font-size: 2.1875em;
   font-weight: 500;
@@ -758,14 +758,14 @@ opacity: 0.5;
 
 }
 #phone {
-  color: white;
+  color: #ecf0f1;
   margin-top: -10px;
 
 }
 
 span p {
   margin-top: -90px;
-  color: white;
+  color: #ecf0f1;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
   font-size: 1.25em;
   font-weight: 300;
@@ -793,11 +793,11 @@ span p {
 }
 
 .projects a {
-  color: white;
+  color: #ecf0f1;
   text-decoration: none;
 }
 .projects a:hover {
-  color: white;
+  color: #ecf0f1;
   text-decoration: underline;
 }
 
@@ -1283,7 +1283,11 @@ span p {
 
 #overlay img {
 	margin-top: 20%;
-	border: 5px solid white;
+	border: 5px solid #ecf0f1;
 	border-radius: 10px;
 	
+}
+
+p, h1, h2, h3 {
+	color: #1D1D1D;
 }
