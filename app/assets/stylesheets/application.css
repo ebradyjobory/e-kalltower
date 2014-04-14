@@ -15,7 +15,7 @@
   margin-left: 170%;
   margin-top: 0.5%;
   padding-bottom: 1%;
-  
+
 }
 
 body {
@@ -26,6 +26,10 @@ body {
 
 background-image {
   max-width: 100%;
+}
+
+.ar-link {
+  color: blue;
 }
 
 
@@ -52,7 +56,7 @@ body#home-page {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
- 
+
 }
 
 body#contact-page {
@@ -124,8 +128,10 @@ iframe {
 .nav-links-en  {
   margin-left: 20%;
   margin-top: -18%;
-  padding-top: 5%;
-  margin-bottom: 4%; 
+  padding-top: 3%;
+  margin-bottom: 4%;
+  width: 100%;
+
 }
 
 .links li {
@@ -144,6 +150,19 @@ iframe {
 	margin-left: 4%;
 	margin-right: auto;
 }
+.arabic a {
+  color: #ebdf9d !important  ;
+  font-size: 1em;
+  font-family: 'Droid Arabic Kufi', serif !important;
+  border-top: none;
+}
+.english a {
+  color: #ebdf9d !important  ;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif !important;
+  border-top: none !important;
+}
+
 
 .links li a {
   text-decoration: none;
@@ -152,23 +171,20 @@ iframe {
   font-weight: normal;
 }
 
+
+
 .links-ar li {
 	font-family: 'Droid Arabic Kufi', serif;
 	font-size: 0.9375em;
 	font-weight: 500;
 	display: inline-block;
-	margin-right: -4%;
+	margin-right: -7%;
 	position: relative;
 	padding: 4% 5%;
 	cursor: pointer;
 }
 
-.arabic {
-	color: #ebdf9d;
-	font-size: 1em;
-	font-family: 'Droid Arabic Kufi', serif;
-	border-top: none;
-}
+
 
 .links-ar {
 	margin-left: 4%;
@@ -186,16 +202,16 @@ iframe {
   margin-left: 85%;
   margin-top: -14.5%;
   padding-top: 2%;
- 
+
   min-width: 100%;
   padding-right: 0%;
-  
+
 }
 
 .nav-links-ar ul li a {
 	font-size: 1.2em;
 	font-family: 'Droid Arabic Kufi', serif;
-	
+
 }
 
 .nav-links-en a:hover {
@@ -204,6 +220,9 @@ iframe {
 
 .arabic a:hover {
 	border-top: none;
+}
+.english a:hover {
+  border-top: none;
 }
 
 .nav-links-ar a:hover {
@@ -220,7 +239,7 @@ cursor: pointer;
 body.about a.about,
 body.project a.project,
 body.service a.service,
-body.contact a.contact { 
+body.contact a.contact {
   border-top: 2px solid #ebdf9d;
 }
 
@@ -235,14 +254,14 @@ body.contact a.contact {
   margin-bottom: 0px;
   padding-left: 10px;
   height: 400px;
-  
+
 }
 
 .statement-arabic h2{
 	margin-left: 70%;
 	font-family: 'Droid Arabic Kufi', serif;
-	
-	
+
+
 }
 
 .statement-arabic h2{
@@ -265,7 +284,7 @@ body.contact a.contact {
 	color: #2c3e50;
 	text-shadow: none;
 	text-decoration: none;
-		
+
 }
 
 .statement span {
@@ -274,21 +293,21 @@ body.contact a.contact {
 	color: #2c3e50;
 	text-shadow: none;
 	text-decoration: none;
-	
+
 }
 
 .statement-project-ar span{
-	
+
     margin-right: -2%;
     margin-left: 50%;
 	right: 8%;
 	margin-top: 28%;
-	
+
 }
 
 .statement-projects-ar {
 	margin-right: 1.5%;
-	
+
 }
 
 .statement-service-ar span{
@@ -297,7 +316,7 @@ body.contact a.contact {
 	right: 50px;
 	margin-top: -2%;
 	margin-right: 2%;
-	
+
 }
 
 #contact h2{
@@ -318,7 +337,7 @@ div.statement-ar {
 	margin-bottom: 20%;
 	margin-right: 7%;
 	margin-top: 10%;
-	
+
 }
 
 div.statement-ar h2 {
@@ -328,8 +347,8 @@ div.statement-ar h2 {
   font-size: 2em;
   font-weight: 400;
   margin-right: 0%;
-  
-  
+
+
 
 }
 
@@ -354,7 +373,7 @@ div.statement-ar h2 {
 
 .statement-about-ar span{
 	margin-right: 5.9%;
-	
+
 }
 
 .statement-projects {
@@ -364,7 +383,7 @@ div.statement-ar h2 {
     font-size: 1.25em;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
-  
+
 }
 .statement h3 {
   color: #ecf0f1;
@@ -407,7 +426,7 @@ text-decoration: underline;
 
 .statement span {
 	font-family: 'Roboto', sans-serif;
-	
+
 }
 
 .statement p a {
@@ -474,9 +493,9 @@ text-decoration: underline;
   background-image: linear-gradient(#222222, #111111);
   background-repeat: repeat no-repeat;
   padding-bottom: 1%;
-  padding-top: 1%;  
+  padding-top: 1%;
   margin: 0%;
-  
+
 }
 
 .footer h4 {
@@ -540,7 +559,7 @@ opacity: 0.5;
 .img {
   border-radius: 50%;
   width: 120px;
-  height: 120px; 
+  height: 120px;
   background-color: white;
   opacity: 0.5;
   float: left;
@@ -732,7 +751,7 @@ span p {
 	margin-bottom: 0%;
 	resize:both;
 	overflow:auto;
-	text-align: right; 
+	text-align: right;
 	font-family: 'Droid Arabic Kufi', serif;
 }
 
@@ -750,7 +769,7 @@ span p {
   padding-bottom: 5%;
   resize:both;
    overflow:auto;
-		
+
 }
 
 .projects-container h3 {
@@ -777,7 +796,7 @@ span p {
    overflow:auto;
    text-align: right;
    font-family: 'Droid Arabic Kufi', serif;
-   	
+
 }
 
 .projects-container-ar h3 {
@@ -789,39 +808,39 @@ span p {
   text-align: right;
   margin-left: 8%;
   }
-  
+
   .projects-container-ar h3:hover {
 	  cursor: pointer;
   }
-  
+
 .statement-projects-ar {
 	text-align: right;
-	
+
 }
 
 .statement-projects-ar h2 {
 	margin-right: 4.5%;
     font-family: 'Droid Arabic Kufi', serif;
-	
+
 }
 
 .statement-projects-ar span {
 	position: absolute;
 	margin-left: 40%;
     font-family: 'Droid Arabic Kufi', serif;
-	
+
 }
 
 .projects-container-ar span {
   font-size: 0.8125em;
   font-weight: 300;
   color: #7f8c8d;
-  
+
 }
 
 .projects-container-ar p{
   font-size: 0.875em;
-  
+
 }
 
 .services-container {
@@ -834,14 +853,14 @@ span p {
 
 .contact-container {
   padding-bottom: 25%;
-  
+
 }
 
 .contact-container-ar {
 	text-align: right;
 	margin-right: 30%;
     font-family: 'Droid Arabic Kufi', serif;
-	
+
 }
 
 .contact-container-ar iframe {
@@ -892,43 +911,43 @@ span p {
 
 
 .services-container-arabic {
-	
+
 	padding-bottom: 23%;
 	text-align: right;
     font-family: 'Droid Arabic Kufi', serif;
-	
-	
+
+
 }
 .services-container-arabic p {
 	margin-right: 25%;
     font-family: 'Droid Arabic Kufi', serif;
-	
-	
+
+
 }
 .services-container-arabic li {
     font-family: 'Droid Arabic Kufi', serif;
-	
+
 }
 
 .services-container-arabic span {
 	margin-right: 10%;
     font-family: 'Droid Arabic Kufi', serif;
-	
+
 }
 
 .statement-services-ar {
-	
+
 	margin-bottom: 20%;
 	text-align: right;
     font-family: 'Droid Arabic Kufi', serif;
-	
+
 }
 
 .statement-contact-ar {
     font-family: 'Droid Arabic Kufi', serif;
 	margin-right: 0%;
-	
-	
+
+
 }
 
 .statement-contact-ar h2{
@@ -939,20 +958,20 @@ span p {
 }
 
 .statement-services-ar h2 {
-	
+
 	margin-right: 3%;
 	color: white;
 	font-size: 2.1875em;
 	font-weight: 400;
 	margin-top: 10%;
 	margin-right: 6%;
-	
+
 }
 .statement-services-ar span{
 	position: absolute;
 	margin-left: -40%;
     font-family: 'Droid Arabic Kufi', serif;
-	
+
 }
 
 
@@ -1079,7 +1098,7 @@ span p {
 	margin-left: 37em;
 	margin-top: -4.1em;
     padding: 1% 0.5%;
-	
+
 }
 
 .language a {
@@ -1095,7 +1114,7 @@ span p {
 	text-decoration: none;
 	float: left;
 	margin-left: 34em;
-	margin-top: -2.8em;	
+	margin-top: -2.8em;
 }
 
 .language-arabic a {
@@ -1113,44 +1132,45 @@ span p {
 
 .contact-arabic h2 {
 	margin-left: 80%;
-	
+
 }
 .contact-arabic span {
 	position: absolute;
 	margin-left: 55%;
-	
+
 }
 
 
 
 .s-arabic-about span{
 	position: absolute;
-	
+
 	margin-right: -1%;
 	text-align: right;
 	margin-top: 1%;
 	margin-bottom: 2%;
-	
+
 }
 
 .statement-arabic-about {
 	margin-left: 75%;
 	margin-bottom: 20%;
     font-family: 'Droid Arabic Kufi', serif;
-	
+
 }
-	
-	
+
+
 
 .facebook-arabic h2{
 	position: relative;
 	margin-left: 0.5%;
-	
+
 
 }
 
 
-/* Lightbox 
+
+/* Lightbox
 ================*/
 
 #overlay {
@@ -1169,7 +1189,7 @@ span p {
 	margin-top: 20%;
 	border: 5px solid #ecf0f1;
 	border-radius: 10px;
-	
+
 }
 
 p, h1, h2, h3 {
