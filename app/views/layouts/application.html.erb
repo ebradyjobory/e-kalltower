@@ -45,7 +45,8 @@
 
 
       </div> -->
-	       <% if  I18n.locale == :en %>
+	<% if  I18n.locale == :en %>
+         <div class="container-en">
             <div class="nav-links-en">
               <ul class="links">
 			  <li class="nav-english"><%= link_to "ABOUT", about_path, :class => 'about' %></li>
@@ -54,7 +55,9 @@
 			  <li class="nav-english"><%= link_to "CONTACT", contact_path, :class => 'contact'%></li>
 			  <li class="arabic"><%= link_to "العربية", :locale=>'ar'%></li>
 			  </ul>
-			  <%else%>
+             </div>
+            </div>
+	<%else%>
 	          <div class="nav-links-ar">
 	            <ul class="links-ar">
   				  <li class="english"><%= link_to "English", :locale=>'en'%></li>
@@ -76,9 +79,18 @@
             </ul> -->
         </div>
     </div>
-       <div class="container">
-           <%= yield %>
-         </div>
+
+
+      <% if  I18n.locale == :en %>
+             <div class="container-en">
+                 <%= yield %>
+               </div>
+        <%else%>
+               <div class="container-ar">
+                 <%= yield %>
+               </div>
+         <%end%>
+
 
 
 
@@ -108,7 +120,7 @@
           <div class="footer-columns">
             <p><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></p>
             <p>+964.770.700.0200</p>
-            <p>Arbil | Sulaimaniyah | Baghdad</p>
+            <p>Baghdad | Erbil | Sulaimaniyah</p>
             <p id="facebook"><%= link_to image_tag("facebook.png", :size => "20x20", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></p>
           </div>
 
