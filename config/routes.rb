@@ -6,7 +6,7 @@ EKalltower::Application.routes.draw do
   match '/contact', to: 'pages#contact', via: 'get'
   match '/services', to: 'pages#services', via: 'get'
  end
- 
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

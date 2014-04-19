@@ -12,7 +12,7 @@
   padding-bottom: 2%;
 }
 .logo-arabic {
-  margin-left: 168.5%;
+  margin-left: 169%;
   margin-top: 0.5%;
   padding-bottom: 1%;
 
@@ -733,6 +733,7 @@ span p {
 .about-container-ar {
 	text-align: left;
 	margin-bottom: 0%;
+      margin-right: -1.5%;
 	resize:both;
 	overflow:auto;
 	text-align: right;
@@ -837,7 +838,9 @@ span p {
 }
 
 .services-container {
-  padding-bottom: 20%;
+  padding-bottom: 2%;
+  resize: both;
+  overflow: auto;
   margin: auto;
 }
 .services-container span {
@@ -848,21 +851,18 @@ margin-left: -5%;
 }
 
 .contact-container {
-  padding-bottom: 25%;
+  padding-bottom: 2%;
+  resize: both;
+ overflow: auto;
 
 }
 
 .contact-container-ar {
-	text-align: right;
-	margin-right: 30%;
+  margin-right: -96%;
+    text-align: right;
     font-family: 'Droid Arabic Kufi', serif;
 
 }
-
-.contact-container-ar iframe {
-	margin-left: 250%;
-}
-
 
 .contact-facebook {
   background-color: none;
@@ -907,17 +907,14 @@ margin-left: -5%;
 
 
 .services-container-arabic {
-
-	padding-bottom: 23%;
-	text-align: right;
+    padding-bottom: 23%;
+    margin-right: 1%;
+    text-align: right;
     font-family: 'Droid Arabic Kufi', serif;
-
-
 }
 .services-container-arabic p {
-	margin-right: 25%;
+	margin-right: 30%;
     font-family: 'Droid Arabic Kufi', serif;
-
 
 }
 .services-container-arabic li {
