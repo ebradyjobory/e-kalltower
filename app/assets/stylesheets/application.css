@@ -11,6 +11,7 @@
   margin-top: 1%;
   padding-bottom: 2%;
 }
+
 .logo-arabic {
   margin-left: 169%;
   margin-top: 0.5%;
@@ -482,7 +483,7 @@ text-decoration: none;
 
 .footer h4 {
   color: grey;
-  margin-bottom: 1px;
+  margin-bottom: 1%;
   font-family: 'Roboto', sans-serif;
   font-size: 0.875em;
 }
@@ -491,7 +492,7 @@ text-decoration: none;
   text-decoration: none;
   color: grey;
   display: inline-block;
-  padding: 1px;
+  padding: 1%;
   font-family: 'Roboto', sans-serif;
   font-size: 0.875em;
 }
@@ -1223,6 +1224,54 @@ p, h1, h2, h3 {
   color: #2c3e50;
   display: inline;
   font-family: 'Roboto', sans-serif;
+
+}
+
+/*Media Queries
+===============
+
+<======= iPad =======> */
+
+
+@media  (max-width: 1024px) {
+
+ .nav-links-en  {
+  margin-left: 50%;
+  margin-top: -50%;
+  padding-top: 0%;
+  margin-bottom: 4%;
+  width: 300%;
+
+}
+    
+
+
+
+
+
+
+}
+
+
+/*<======= iPhone =======> */
+
+@media  (max-width: 640px) {
+
+
+  .nav-links-en {
+   display: none;
+  }
+
+  .container-en {
+    text-align: center;
+    margin-right: 1%;
+    margin-bottom: 33%;
+  }
+
+  .footer {
+
+  }
+
 
 }
 
