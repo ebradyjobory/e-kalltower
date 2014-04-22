@@ -100,6 +100,14 @@ var $arrowRightBaghdad = $('<div id="arrowright_baghdad"></div>');
 	$arrowRight.remove();
 	});
 
+	// $(".arrow").click(function(){
+	// $(this).prepend($arrowRight);
+	// });
+
+
+
+
+
   	$(".arrow-ar").hover(function(){
 	$(this).prepend($arrowRightAr);}, function(){
 	$arrowRightAr.remove();
