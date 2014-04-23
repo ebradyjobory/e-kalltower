@@ -21,10 +21,12 @@
 		<div class="about-columns">
 		<h2>Leadership</h2>
 		<div class="leadership-roles">
+			<div id="arrowtag-omer"><%=image_tag("arrow.png", :size => "15x13", :alt => 'arrow')%></div>
 			<h2 class="glow arrow_about_omer">Omer Abood<br>
 				<span>Owner-Operator</span></h2>
 				 <p class='pabout', style='display:none'>Graduate of the University of Technology's Department of Engineering in Baghdad</p>
 
+                <div id="arrowtag-erica"><%=image_tag("arrow.png", :size => "15x13", :alt => 'arrow')%></div>
 				<h2 class="glow arrow_about_erica">Erica Dollar<br>
 					<span>General Manager</span></h2>
 					<p class='pabout', style='display:none'>Extensive background in construction management projects across the US and Iraq</p>
@@ -73,3 +75,35 @@
 </div>
 
 <%end%>
+
+<script>
+$('.glow').click(function(){
+    $(this).next('.pabout').toggle();
+    });
+var $arrowRightAboutOmer = $('<div id="arrow_about_omer"></div>');
+var $arrowRightAboutErica = $('<div id="arrow_about_erica"></div>');
+var $arrowRightAboutOmerAr= $('<div id="arrow_about_omer_ar"></div>');
+var $arrowRightAboutEricaAr = $('<div id="arrow_about_erica_ar"></div>');
+
+$(".arrow_about_omer").hover(function(){
+	$(this).prepend($arrowRightAboutOmer);}, function(){
+	$arrowRightAboutOmer.remove();
+	});
+
+  	$(".arrow_about_erica").hover(function(){
+	$(this).prepend($arrowRightAboutErica);}, function(){
+	$arrowRightAboutErica.remove();
+	});
+
+  	$(".arrow_about_omer_ar").hover(function(){
+	$(this).prepend($arrowRightAboutOmerAr);}, function(){
+	$arrowRightAboutOmerAr.remove();
+	});
+
+  	$(".arrow_about_erica_ar").hover(function(){
+	$(this).prepend($arrowRightAboutEricaAr);}, function(){
+	$arrowRightAboutEricaAr.remove();
+	});
+
+
+</script>

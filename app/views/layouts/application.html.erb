@@ -6,6 +6,7 @@
       <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
       <%= csrf_meta_tags %>
 
+
       <link href='http://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 	  <link href='http://fonts.googleapis.com/earlyaccess/droidarabickufi.css'rel='stylesheet' type='text/css'>
@@ -59,25 +60,17 @@
              </div>
             </div>
 	<%else%>
-	          <div class="nav-links-ar">
+	         <div class="nav-links-ar">
 	            <ul class="links-ar">
   				  <li class="english"><%= link_to "English", :locale=>'en'%></li>
-				  <li><%= link_to "إتصل بنا", contact_path, :class => 'contact' %></li>
-				  <li><%= link_to "الخدمات", services_path, :class => 'service' %></li>
-				  <li><%= link_to "المشاريع", projects_path, :class => 'project' %></li>
-				  <li><%= link_to "من نحن", about_path, :class => 'about' %></li>
+  				  <li><%= link_to "إتصل بنا", contact_path, :class => 'contact'%></li>
+  				  <li><%= link_to "الخدمات", services_path, :class => 'service' %></li>
+  				  <li><%= link_to "المشاريع", projects_path, :class => 'project' %></li>
+  				  <li><%= link_to "من نحن", about_path, :class => 'about' %></li>
 			  </ul>
 			  <%end%>
 
-               <!--  <ul id="drop-list">
-                  <li><a href="/structural">STRUCTURAL</a></li>
-                  <li><a href="/mechanical">MECHANICAL</a></li>
-                  <li><a href="electrical">ELECTRICAL</a></li>
-                  <li><a href="combo">Combo</a></li>
-                </ul>
-              </li>
-              <li><a href="/contact">CONTACT</a></li>
-            </ul> -->
+
         </div>
     </div>
 
@@ -164,6 +157,5 @@
            </div>
 
 		   <%end%>
-
           </body>
           </html>

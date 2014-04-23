@@ -16,79 +16,44 @@
 //= require_tree .
 //= require fancybox
 
+/* drop list menu for mobile view 
+================================= */
+
+
+
+/* 
+====================== drop list ends here*/
 
 $(document).ready(function(){
-	$( "h3" ).click(function() {
-	$(this).next('p').toggle();
-	  });
-
-
-
-$('.glow').click(function(){
-    $(this).next('.pabout').toggle();
-    });
-
-
-});
-
-
-
-/* LightBox
-================= */
-//Capture the click event on a link to an image
-
-// $(document).ready(function(){
-// 	//Add overlay
-// 	var $overlay = $('<div id="overlay"></div>');
-// 	//Add image
-// 	var $image = $("<img>");
-// 	$overlay.append($image);
-//
-//
-// 	$("body").append($overlay);
-//
-//
-// 	$(".gallery a").click(function(event){
-// 		event.preventDefault();
-// 		var imageLocation = $(this).attr("href");
-// 		$image.attr("src", imageLocation);
-// 		$overlay.show();
-// 	  });
-// 	  $overlay.click(function(){
-// 		  $(this).hide();
-// 	  });
-// });
-//Show the overlay
-//Update overlay with the image linked in the link
-//Add the overlay
-//An image
-//When clicked on overlay, hide the overlay
 
 
 
 
-$(document).ready(function() {
-	$(".fancybox").fancybox({
+
+// $('.glow').click(function(){
+//     $(this).next('.pabout').toggle();
+//     });
+
+
+
+
+$(".fancybox").fancybox({
 		openEffect	: 'none',
 		closeEffect	: 'none'
 	});
-});
+
 
 /* Add arrows when hover over h3 links
 ===================================== */
 
 
 
-$(document).ready(function() {
+
 
 //Define two arrows images, one points right and other down
 var $arrowRight = $('<div id="arrowright"></div>');
 var $arrowRightAr = $('<div id="arrowright-ar"></div>');
 var $arrowRightBaghdadAr = $('<div id="arrowright-baghdad-ar"></div>');
-var $arrowRightAboutOmer = $('<div id="arrow_about_omer"></div>');
-var $arrowRightAboutErica = $('<div id="arrow_about_erica"></div>');
-var $arrowRightAboutOmerAr= $('<div id="arrow_about_omer_ar"></div>');
-var $arrowRightAboutEricaAr = $('<div id="arrow_about_erica_ar"></div>');
 var $arrowRightShort = $('<div id="arrowright_short"></div>');
 var $arrowRightBaghdad = $('<div id="arrowright_baghdad"></div>');
 
