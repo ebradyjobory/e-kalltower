@@ -1260,28 +1260,13 @@ p, h1, h2, h3 {
   width: 300%;
 
 }
-    
+
 
 #arrow_about_omer, #arrow_about_erica   {
    display: none;
 
 }
 
-#arrowtag-omer {
-  position: absolute;
-  display: inline;
-  margin-left: 12%;
-  margin-top: 3%;
-
-}
-
-#arrowtag-erica{
-  position: absolute;
-  display: inline;
-  margin-left: 13%;
-  margin-top: 3%;
-
-}
 
 
 
@@ -1294,27 +1279,29 @@ p, h1, h2, h3 {
 @media  (max-width: 640px) {
 
   .logo {
-    margin-left: 60%;
-    width: 90%;
+    margin-top: 5%;
+    margin-left: 65%;
+    width: 100%;
+
+
   }
 
 
   .nav-links-en {
     
-    width: 1%;
-    margin-left: 40%;
-    text-align: center;
-    display: block;
+    width: 70%;
+    margin-left: 50%;
     margin-top: 4%; 
     padding-bottom: 5%; 
     font-size: 1.5em;
-
+    text-align: center;
   
   }
 
-  .nav-links-en ul li{
+  .nav-links-en  li {
+
+
     
-    display:inline;
 
   }
 
@@ -1372,5 +1359,8 @@ body.contact a.contact {
 
 
 }
+
+/* Lightbox CSS*/
+
 
 
