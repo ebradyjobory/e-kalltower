@@ -56,12 +56,12 @@
 										<div class="pp_details"> \
 											<div class="pp_nav"> \
 												<a href="#" class="pp_arrow_previous">Previous</a> \
-												<p class="currentTextHolder">0/0</p> \
+												<p class=""></p> \
 												<a href="#" class="pp_arrow_next">Next</a> \
 											</div> \
 											<p class="pp_description"></p> \
 											<div class="pp_social">{pp_social}</div> \
-											<a class="pp_close" href="#">Close</a> \
+											<a class="pp_close colse_but" href="#">Close</a> \
 										</div> \
 									</div> \
 								</div> \
@@ -90,7 +90,7 @@
 			iframe_markup: '<iframe src ="{path}" width="{width}" height="{height}" frameborder="no"></iframe>',
 			inline_markup: '<div class="pp_inline">{content}</div>',
 			custom_markup: '',
-			social_tools: '<div class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div><div class="facebook"><iframe src="//www.facebook.com/plugins/like.php?locale=en_US&href={location_href}&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:500px; height:23px;" allowTransparency="true"></iframe></div>' /* html or false to disable */
+			social_tools: '<div class="twitter"><a href="http://twitter.com/share" class="" data-count="none"></a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div><div class=""><iframe src="//www.facebook.com/plugins/like.php?locale=en_US&href={location_href}&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:500px; height:23px;" allowTransparency="true"></iframe></div>' /* html or false to disable */
 		}, pp_settings);
 		
 		// Global variables accessible only by prettyPhoto
@@ -198,23 +198,20 @@
 				setHashtag();
 		
 			// Rebuild Facebook Like Button with updated href
-			if(settings.social_tools){
-				facebook_like_link = settings.social_tools.replace('{location_href}', encodeURIComponent(location.href)); 
-				$pp_pic_holder.find('.pp_social').html(facebook_like_link);
-			}
+			
 			
 			// Fade the content in
 			if($ppt.is(':hidden')) $ppt.css('opacity',0).show();
 			$pp_overlay.show().fadeTo(settings.animation_speed,settings.opacity);
 
 			// Display the current position
-			$pp_pic_holder.find('.currentTextHolder').text((set_position+1) + settings.counter_separator_label + $(pp_images).size());
+			// $pp_pic_holder.find('.currentTextHolder').text((set_position+1) + settings.counter_separator_label + $(pp_images).size());
 
 			// Set the description
 			if(typeof pp_descriptions[set_position] != 'undefined' && pp_descriptions[set_position] != ""){
-				$pp_pic_holder.find('.pp_description').show().html(unescape(pp_descriptions[set_position]));
+				$pp_pic_holder.find('.pp_descripti').show().html(unescape(pp_descriptions[set_position]));
 			}else{
-				$pp_pic_holder.find('.pp_description').hide();
+				$pp_pic_holder.find('.pp_descript').hide();
 			}
 			
 			// Get the dimensions

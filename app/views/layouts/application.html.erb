@@ -29,6 +29,11 @@
 		  <%end%>
    </head>
   <body>
+     <script type="text/javascript" charset="utf-8">
+            $(document).ready(function(){
+              $("a[rel^='prettyPhoto']").prettyPhoto();
+            });
+       </script>
   
 	<% if  I18n.locale == :en %>
          <div class="container-en">
@@ -144,10 +149,6 @@
            </div>
 
 		   <%end%>
-       <script type="text/javascript" charset="utf-8">
-  $(document).ready(function(){
-    $("a[rel^='prettyPhoto']").prettyPhoto();
-  });
-</script>
+      
           </body>
           </html>
