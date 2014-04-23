@@ -25,28 +25,7 @@
 		  <%end%>
    </head>
   <body>
-	  <!-- <% if  I18n.locale == :en %>
-		  <div class="language">
-		  <% if I18n.locale == I18n.default_locale %>
-		  <%= link_to "العربية", :locale=>'ar', :class => 'ar-link'%>
-		  <% else %>
-		  <%= link_to "English", :locale=>'en',  :class => 'en-link'%>
-		  <%end%>
-
-	  <%else%>
-
-		  <div class="language language-arabic">
-		  <% if I18n.locale == I18n.default_locale %>
-		  <%= link_to "العربية", :locale=>'ar'%>
-		  <% else %>
-		  <%= link_to "English", :locale=>'en'%>
-		  <%end%>
-
-	  <%end%>
-
-
-
-      </div> -->
+	  
 	<% if  I18n.locale == :en %>
          <div class="container-en">
             <div class="nav-links-en">
@@ -59,7 +38,7 @@
 			  </ul>
              </div>
             </div>
-	<%else%>
+	<%elsif%>
 	         <div class="nav-links-ar">
 	            <ul class="links-ar">
   				  <li class="english"><%= link_to "English", :locale=>'en'%></li>
@@ -90,10 +69,10 @@
 
 
 	           <% if current_page? root_path %>
-	           <%elsif%>
-	           <div class="white-section">
-	             <%= yield :section %>
-	           </div>
+	           <%else%>
+             <div class="white-section">
+               <%= yield :section %>
+             </div>
 	           <%end%>
 
 

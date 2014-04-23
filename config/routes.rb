@@ -1,11 +1,18 @@
 EKalltower::Application.routes.draw do
+
+ 
+
+
   scope "(:locale)", :locale => /en|ar/ do
+
       root 'pages#home'
       match '/projects', to: 'pages#projects', via: 'get'
       match '/about', to: 'pages#about', via: 'get'
       match '/contact', to: 'pages#contact', via: 'get'
       match '/services', to: 'pages#services', via: 'get'
  end
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
