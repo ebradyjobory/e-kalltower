@@ -1,7 +1,5 @@
 EKalltower::Application.routes.draw do
 
- 
-
 
   scope "(:locale)", :locale => /en|ar/ do
 

@@ -64,16 +64,20 @@
                </div>
          <%end%>
 
-
-
-
-
-	           <% if current_page? root_path %>
-	           <%else%>
+            <% if current_page? '/' %>
+            <%elsif%>
+             <% if current_page? root_path %>
+             <!-- do nothing -->
+             <%else%>
+             <!-- insert the white section -->
              <div class="white-section">
                <%= yield :section %>
              </div>
-	           <%end%>
+             <%end%>
+             <%end%>
+
+
+	          
 
 
 
