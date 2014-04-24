@@ -902,8 +902,14 @@ margin-left: -5%;
 
 .services-contact-us-arabic {
 	margin-top: 16%;
-	margin-left: 66%;
+	margin-left: 0%;
 
+}
+
+.services-contact-us-arabic p {
+  position: absolute;
+  margin-top: 6%;
+  right: -165%;
 }
 
 .services-contact-us a {
@@ -1204,7 +1210,7 @@ p, h1, h2, h3 {
 
 .container-ar {
   text-align: right;
-  margin: 8%  3% 9% 49%;
+  margin: 8%  3% 9% 50%;
   font-family: 'Droid Arabic Kufi', serif;
   direction: rtl;
 
