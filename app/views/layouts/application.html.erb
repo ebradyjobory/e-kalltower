@@ -93,7 +93,7 @@
 
      <% if  I18n.locale == :en %>
          <div class="footer">
-         <div class="footer-columns">
+         <div class="footer-column-a">
             <ul>
               <li><a href="/">HOME</a></li>
               <li><a href="/about">ABOUT</a></li>
@@ -103,15 +103,13 @@
             </ul>
           </div>
 
-          <div class="footer-columns">
-            <p><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></p>
-            <p>+964.770.700.0200</p>
-            <p>Baghdad | Erbil | Sulaimaniyah</p>
-            <p id="facebook"><%= link_to image_tag("facebook.png", :size => "20x20", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></p>
-          </div>
-
-          <div class="footer-columns">
-
+          <div class="footer-column-b">  
+			  <ul>
+            <li><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></li>
+            <li>+964.770.700.0200</li>
+            <li>Baghdad | Erbil | Sulaimaniyah</li>
+            <li id="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li>
+		</ul>
           </div>
 
           <div class="copyrights">
