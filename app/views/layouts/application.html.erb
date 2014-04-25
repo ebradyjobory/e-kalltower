@@ -92,34 +92,38 @@
 
 
      <% if  I18n.locale == :en %>
-         <div class="footer">
-         <div class="footer-column-a">
-            <ul>
-              <li><a href="/">HOME</a></li>
-              <li><a href="/about">ABOUT</a></li>
-              <li><a href="/projects">PROJECTS</a></li>
-              <li><a href="/services">SERVICES</a></li>
-              <li><a href="/contact">CONTACT</a></li>
-            </ul>
-          </div>
+        <div class="footer">
+            <div class="footer-column-a">
+                <ul>
+                  <li><a href="/">HOME</a></li>
+                  <li><a href="/about">ABOUT</a></li>
+                  <li><a href="/projects">PROJECTS</a></li>
+                  <li><a href="/services">SERVICES</a></li>
+                  <li><a href="/contact">CONTACT</a></li>
+                </ul>
+            </div>
 
-          <div class="footer-column-b">  
-			  <ul>
-            <li><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></li>
-            <li>+964.770.700.0200</li>
-            <li>Baghdad | Erbil | Sulaimaniyah</li>
-            <li id="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li>
-		</ul>
-          </div>
+            <div class="footer-column-b">  
+        			  <ul>
+                    <li><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></li>
+                    <li>+964.770.700.0200</li>
+                    <li>Baghdad | Erbil | Sulaimaniyah</li>
+                    <li id="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li>
+        		    </ul>
+        </div>
 
-          <div class="copyrights">
+        <div class="copyrights">
             <p><strong>&copy</strong> 2014 E-Kall Tower Company. All Rights Reserved.</p>
             <p>Designed, developed, maintained by <a href="http://cuneiform.io" target="_blank">cuneiform.io</a></p>
-          </div>
+        </div>
+
+
 
 		  <%else%>
 
-          <div class="footer-ar">
+
+
+    <div class="footer-ar">
           <div class="footer-column-ar-a">
              <ul>
                <li><a href="/">ألرئيسية</a></li>
@@ -128,25 +132,25 @@
                <li><a href="/services">الخدمات</a></li>
                <li><a href="/contact">إتصل بنا</a></li>
              </ul>
-           </div>
+          </div>
 
-           <div class="footer-column-ar-b">
-	 			  <ul>
-	             <li><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></li>
-	             <li>٧٠٠٠٢٠٠ ٧٧٠ ٩٦٤+</li>
-	             <li>بغداد |  أربيل | السليمانية </li>
-	             <li id="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li>
-	 		</ul>
-           </div>
+          <div class="footer-column-ar-b">
+  	 			  <ul>
+  	             <li><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></li>
+  	             <li>٧٠٠٠٢٠٠ ٧٧٠ ٩٦٤+</li>
+  	             <li>بغداد |  أربيل | السليمانية </li>
+  	             <li id="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li>
+  	 		     </ul>
+          </div>
 
-           <div class="footer-columns">
+         <!--  <div class="footer-columns">
 
-           </div>
+           </div> -->
 
-           <div class="copyrights-ar">
-            <p><a href="http://cuneiform.io" target="_blank">cuneiform.io</a>تصميم, تطوير, و صيانة  بواسطة</p>
-			 <p>.٢٠١٤ شركة برج إيكال. جميع الحقوق محفوظة <strong>&copy</strong></p>
-           </div>
+          <div class="copyrights-ar">
+              <p><a href="http://cuneiform.io" target="_blank">cuneiform.io</a>&nbspتصميم&#x60c تطوير&#x60c و صيانة بواسطة</p>
+  			        <p>.٢٠١٤ شركة برج إيكال. جميع الحقوق محفوظة <strong>&copy</strong></p>
+          </div>
 
 		   <%end%>
       

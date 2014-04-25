@@ -453,7 +453,7 @@ text-decoration: none;
   font-family: 'Droid Arabic Kufi', serif;
   font-size: 0.75em;
   color: #bdc3c7;
-  text-direction: rtl;
+  direction: ltr;
 }
 
 
@@ -480,19 +480,22 @@ text-decoration: none;
   color: black;
 }
 
-.copyrights-ar p:nth-child(2) a{
+.copyrights-ar p:nth-child(1) a {
   background-color: #FFFF99;
   color: black;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.0em;
+  margin-top: -1.5%;
 } 
 
-.copyrights p:nth-child(2) a:hover{
+/*.copyrights p:nth-child(2) a:hover{
+  color: black;
+}*/
+
+/*.copyrights-ar p:nth-child(2) a:hover{
   color: black;
 }
-
-.copyrights-ar p:nth-child(2) a:hover{
-  color: black;
-}
-
+*/
 /*.credit {
   text-align: right;
   font-family: 'Roboto', sans-serif;
@@ -531,7 +534,7 @@ text-decoration: none;
   margin: 0%;
   font-weight: normal;
   color: grey;
-  text-direction: rtl;
+  direction: rtl;
 }
 
 .copyrights a {
@@ -619,9 +622,9 @@ text-decoration: none;
 }
 
 .footer-column-ar-a ul:before {
-	display: inline-block;
+	  display: inline-block;
     margin-bottom: 3%;
-	margin-left: 0%;
+	  margin-left: 0%;
     height: 1px;
     content: " ";
     text-shadow: none;
@@ -630,9 +633,9 @@ text-decoration: none;
 }
 
 .footer-column-ar-b ul:before {
-	display: inline-block;
+	  display: inline-block;
     margin-bottom: 3%;
-	margin-left: 0%;
+	  margin-left: 0%;
     height: 1px;
     content: " ";
     text-shadow: none;
@@ -667,8 +670,9 @@ text-decoration: none;
 }
 
 .footer-column-ar-a ul {
-    list-style-image: url('arrow-right.png');
-	list-style-position: inside;
+    list-style-image: url('arrow-left.png');
+	  list-style-position: inside;
+
 }
 
 .footer-column-ar-a li{
@@ -676,7 +680,7 @@ text-decoration: none;
   margin-bottom: 1px;
   font-family: 'Droid Arabic Kufi', serif;
   font-size: 0.875em;
-  text-direction: rtl;
+  direction: rtl;
 }
 
 .footer-column-ar-b ul {
@@ -715,7 +719,6 @@ text-decoration: none;
   color: grey;
   font-family: 'Droid Arabic Kufi', serif;
   font-size: 0.875em;
-  text-direction: rtl;
 }
 
 .footer-column-ar-b {
@@ -724,7 +727,6 @@ text-decoration: none;
   color: grey;
   font-family: 'Droid Arabic Kufi', serif;
   font-size: 0.875em;
-  text-direction: rtl;
 }
 
 .engineering {
