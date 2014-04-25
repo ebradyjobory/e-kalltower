@@ -584,10 +584,9 @@ text-decoration: none;
   color: grey;
   display: inline-block;
   padding: 0%;
-  font-family: 'Droid Arabic Kufi', serif;
   font-size: 0.875em;
   font-weight: normal;
-  text-direction: rtl;
+  direction: rtl;
 }
 
 .footer-ar a:hover {
@@ -684,18 +683,24 @@ text-decoration: none;
 }
 
 .footer-column-ar-b ul {
-    list-style: none;
+  list-style: none;
 	list-style-position: inside;
 }
 
 .footer-column-ar-b li{
+  font-family: 'Droid Arabic Kufi', serif;
   color: grey;
   margin-bottom: 1px;
-  font-family: 'Droid Arabic Kufi', serif;
   font-size: 0.875em;
   line-height: 1.8em;
-  text-direction: rtl;
+  direction: rtl;
 }
+.footer-column-ar-b li a {
+    font-family: 'Roboto', sans-serif !important;
+
+
+}
+
 
 .footer-column-a {
   float: left;
