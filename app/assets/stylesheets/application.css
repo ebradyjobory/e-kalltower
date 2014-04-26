@@ -603,7 +603,7 @@ text-decoration: none;
 
 .footer-column-a ul:before {
 	  display: inline-block;
-    margin-bottom: 6% !important;
+    margin-bottom: 8% !important;
 	  margin-left: 0%;
     height: 1px;
     content: " ";
@@ -627,7 +627,7 @@ text-decoration: none;
 
 .footer-column-ar-a ul:before {
 	  display: inline-block;
-    margin-bottom: 6%;
+    margin-bottom: 8%;
 	  margin-left: 0%;
     height: 1px;
     content: " ";
