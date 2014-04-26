@@ -8,14 +8,16 @@
 
 .logo {
   margin-left: 7%;
-  margin-top: 0.5%;
-  padding-bottom: 2%;
+  margin-top: 0.55%;
+  padding-bottom: 0.4%;
 }
 
 .logo-arabic {
-  margin-left: 169%;
+  margin-right: -93%;
   margin-top: 0.5%;
-  padding-bottom: 1%;
+  padding-bottom: 4%; 
+  direction: rtl;
+
 
 }
 
@@ -131,7 +133,7 @@ iframe {
 
 .nav-links-en  {
   margin-left: 50%;
-  margin-top: -49%;
+  margin-top: -47%;
   padding-top: 0.4%;
   margin-bottom: 0%;
   width: 200%;
@@ -180,7 +182,8 @@ iframe {
 	display: inline-block;
 	margin-right: -6.0%;
 	position: relative;
-	padding: 4% 5%;
+	padding: 3.4% 5.2%;
+  margin-top: -1.5%;
 	cursor: pointer;
 }
 
@@ -200,8 +203,9 @@ iframe {
 
 .nav-links-ar  {
   margin-left: 86%;
-  margin-top: -14.5%;
-  padding-top: 2.6%;
+  margin-top: -16%;
+  padding-top: 2.5%;
+  padding-bottom: 0.001%;
   min-width: 100%;
   padding-right: 0%;
 
@@ -601,7 +605,7 @@ text-decoration: none;
 .footer-column-a ul:before {
 	display: inline-block;
     margin-bottom: 3%;
-	margin-left: 0%;
+	  margin-left: 0%;
     height: 1px;
     content: " ";
     text-shadow: none;
@@ -609,10 +613,26 @@ text-decoration: none;
     width: 100%;
 }
 
+
+
+  .footer-column-a .selector, x:-moz-any-link, x:default ul:before {
+    display: inline-block;
+    margin-bottom: 3%;
+    margin-left: 0%;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #444;
+    width: 100%;
+  }
+
+
+
+
 .footer-column-b ul:before {
 	display: inline-block;
     margin-bottom: 3%;
-	margin-left: 0%;
+	  margin-left: 0%;
     height: 1px;
     content: " ";
     text-shadow: none;
