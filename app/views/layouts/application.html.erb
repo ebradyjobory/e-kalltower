@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <title>E-Kall Tower Co. | Construction &amp; General Building</title>
+<title>E-Kall Tower Co. | Construction &amp; General Building</title>
+  <head> 
       <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
       <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
       <%= javascript_include_tag "jquery.prettyPhoto", "data-turbolinks-track" => true %>
@@ -13,9 +13,10 @@
       <%= metamagic %>
       <link href='http://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-	  <link href='http://fonts.googleapis.com/earlyaccess/droidarabickufi.css'rel='stylesheet' type='text/css'>
+	  <link href='http://fonts.googleapis.com/earlyaccess/droidarabickufi.css' rel='stylesheet' type='text/css'>
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+  </head>
         <!-- <nav class="navbar-brand"> -->
         <div class="header">
 			<% if  I18n.locale == :en %>
@@ -27,9 +28,9 @@
           <%= link_to image_tag("logo3.png", :size => "150x50", :alt => 'logo', :class => "gallery"), root_path %>
           </div>
 		  <%end%>
-   </head>
+   
   <body>
-     <script type="text/javascript" charset="utf-8">
+     <script type="text/javascript">
             $(document).ready(function(){
               $("a[rel^='prettyPhoto']").prettyPhoto();
             });
@@ -46,7 +47,8 @@
 			  <li class="arabic"><%= link_to "العربية", :locale=>'ar'%></li>
 			  </ul>
              </div>
-            </div>
+          </div>
+          
 	<%elsif%>
 	         <div class="nav-links-ar">
 	            <ul class="links-ar">
