@@ -133,7 +133,7 @@ iframe {
 
 .nav-links-en  {
   margin-left: 50%;
-  margin-top: -45.5%;
+  margin-top: -47%;
   padding-top: 0.4%;
   margin-bottom: 0%;
   width: 200%;
@@ -183,16 +183,10 @@ iframe {
 	margin-right: -5.5%;
 	position: relative;
 	padding: 3.4% 5.7%;
-  margin-top: -1.5%;
+  margin-top: -1.6%;
 	cursor: pointer;
 }
 
-
-
-.links-ar {
-	margin-left: 11%;
-	margin-right: auto;
-}
 
 .links-ar li a {
   text-decoration: none;
@@ -202,9 +196,9 @@ iframe {
 }
 
 .nav-links-ar  {
-  margin-left: 82%;
+  margin-left: 87%;
   margin-top: -15.5%;
-  padding-top: 2.5%;
+  padding-top: 1.5%;
   padding-bottom: 0.001%;
   min-width: 100%;
   padding-right: 0%;
@@ -1456,7 +1450,7 @@ p, h1, h2, h3 {
 
  .nav-links-en  {
   margin-left: 50%;
-  margin-top: -50%;
+  margin-top: -49%;
   padding-top: 0%;
   margin-bottom: 4%;
   width: 300%;
@@ -1468,9 +1462,6 @@ p, h1, h2, h3 {
    display: none;
 
 }
-
-
-
 
 
 }
@@ -1500,12 +1491,6 @@ p, h1, h2, h3 {
   
   }
 
-  .nav-links-en  li {
-
-
-    
-
-  }
 
   
 
@@ -1544,23 +1529,10 @@ body.contact a.contact {
     font-size: 1em;
   }
 
-.nav-links-ar {
-    
-    width: 1%;
-    margin-left: 40%;
-    text-align: center;
-    display: block;
-    margin-top: 4%; 
-    padding-bottom: 5%; 
-    font-size: 1.5em;
-
-  
-  }
-
-
-
-
 }
+
+
+
 
 /* Lightbox CSS*/
 
