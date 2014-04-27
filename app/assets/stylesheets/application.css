@@ -518,7 +518,6 @@ text-decoration: none;
   background-repeat: repeat no-repeat;
   padding-bottom: 1%;
   padding-top: 1%;
-  margin: 0%;
   font-weight: normal;
   color: grey;
 
@@ -607,9 +606,13 @@ text-decoration: none;
     
 }
 
+.footer-column-a {
+  margin-left: 2%;
+  padding-left: 0%;
+}
 
 .footer-column-b ul:before {
-	display: inline-block;
+	  display: inline-block;
     margin-bottom: 3%;
 	  margin-left: 0%;
     height: 1px;
@@ -620,20 +623,18 @@ text-decoration: none;
 }
 
 .footer-column-ar-a ul:before {
-	  display: inline-block;
+    display: inline-block;
     margin-bottom: 8%;
-	  margin-left: 0%;
     height: 1px;
     content: " ";
     text-shadow: none;
     background-color: #444;
-    width: 340%;
+    width: 400%;
 }
 
 .footer-column-ar-b ul:before {
 	  display: inline-block;
-    margin-bottom: 3%;
-	  margin-left: 0%;
+    margin-bottom: 3.5%;
     height: 1px;
     content: " ";
     text-shadow: none;
@@ -643,7 +644,7 @@ text-decoration: none;
 
 .footer-column-a ul {
     list-style-image: url('arrow-right.png');
-	  list-style-position: inside;
+
 }
 
 .footer-column-a li{
@@ -669,7 +670,8 @@ text-decoration: none;
 
 .footer-column-ar-a ul {
     list-style-image: url('arrow-left.png');
-	  list-style-position: inside;
+    margin-right: 3%;
+	  
 
 }
 
@@ -717,6 +719,7 @@ text-decoration: none;
 }
 
 .footer-column-ar-a {
+  margin-right: 1.5%;
   float: right;
   color: grey;
   font-family: 'Droid Arabic Kufi', serif;
@@ -1535,6 +1538,5 @@ body.contact a.contact {
 
 
 /* Lightbox CSS*/
-
 
 

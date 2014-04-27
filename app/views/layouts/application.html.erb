@@ -6,7 +6,6 @@
       <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
       <%= javascript_include_tag "jquery.prettyPhoto", "data-turbolinks-track" => true %>
       <%= stylesheet_link_tag "prettyPhoto", media: "all", "data-turbolinks-track" => true %>
-      <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 
 
       <%= csrf_meta_tags %>
@@ -87,74 +86,64 @@
              <%end%>
              <%end%>
 
-
-	          
-
-
-
-
      <% if  I18n.locale == :en %>
         <div class="footer">
-            <div class="footer-column-a">
-                <ul>
-                  <li><a href="/">HOME</a></li>
-                  <li><a href="/about">ABOUT</a></li>
-                  <li><a href="/projects">PROJECTS</a></li>
-                  <li><a href="/services">SERVICES</a></li>
-                  <li><a href="/contact">CONTACT</a></li>
-                </ul>
+                <div class="footer-column-a">
+                    <ul>
+                      <li><a href="/">HOME</a></li>
+                      <li><a href="/about">ABOUT</a></li>
+                      <li><a href="/projects">PROJECTS</a></li>
+                      <li><a href="/services">SERVICES</a></li>
+                      <li><a href="/contact">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column-b">  
+            			  <ul>
+                        <li><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></li>
+                        <li>+964.770.700.0200</li>
+                        <li>Baghdad | Erbil | Sulaimaniyah</li>
+                        <li id="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li>
+            		    </ul>
+                </div>
+
+            <div class="copyrights">
+                <p><strong>&copy</strong> 2014 E-Kall Tower Company. All Rights Reserved.</p>
+                <p>Designed, developed, maintained by <a href="http://cuneiform.io" target="_blank">cuneiform.io</a></p>
             </div>
-
-            <div class="footer-column-b">  
-        			  <ul>
-                    <li><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></li>
-                    <li>+964.770.700.0200</li>
-                    <li>Baghdad | Erbil | Sulaimaniyah</li>
-                    <li id="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li>
-        		    </ul>
         </div>
-
-        <div class="copyrights">
-            <p><strong>&copy</strong> 2014 E-Kall Tower Company. All Rights Reserved.</p>
-            <p>Designed, developed, maintained by <a href="http://cuneiform.io" target="_blank">cuneiform.io</a></p>
-        </div>
-
 
 
 		  <%else%>
 
 
-
     <div class="footer-ar">
-          <div class="footer-column-ar-a">
-             <ul>
-               <li><a href="/ar">ألرئيسية</a></li>
-               <li><a href="/ar/about">من نحن</a></li>
-               <li><a href="/ar/projects">المشاريع</a></li>
-               <li><a href="/ar/services">الخدمات</a></li>
-               <li><a href="/ar/contact">إتصل بنا</a></li>
-             </ul>
-          </div>
+              <div class="footer-column-ar-a">
+                 <ul>
+                   <li><a href="/ar">ألرئيسية</a></li>
+                   <li><a href="/ar/about">من نحن</a></li>
+                   <li><a href="/ar/projects">المشاريع</a></li>
+                   <li><a href="/ar/services">الخدمات</a></li>
+                   <li><a href="/ar/contact">إتصل بنا</a></li>
+                 </ul>
+              </div>
 
-          <div class="footer-column-ar-b">
-  	 			  <ul>
-  	             <li><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></li>
-  	             <li>٧٠٠٠٢٠٠ ٧٧٠ ٩٦٤+</li>
-  	             <li>بغداد |  أربيل | السليمانية </li>
-  	             <li id="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li>
-  	 		     </ul>
-          </div>
+              <div class="footer-column-ar-b">
+      	 			  <ul>
+      	             <li><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></li>
+      	             <li>٧٠٠٠٢٠٠ ٧٧٠ ٩٦٤+</li>
+      	             <li>بغداد |  أربيل | السليمانية </li>
+      	             <li id="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li>
+      	 		     </ul>
+              </div>
 
-         <!--  <div class="footer-columns">
-
-           </div> -->
-
-          <div class="copyrights-ar">
-              <p><a href="http://cuneiform.io" target="_blank">cuneiform.io</a>&nbspتصميم&#x60c تطوير&#x60c و صيانة بواسطة</p>
-  			        <p>.٢٠١٤ شركة برج إيكال. جميع الحقوق محفوظة <strong>&copy</strong></p>
-          </div>
+              <div class="copyrights-ar">
+                  <p><a href="http://cuneiform.io" target="_blank">cuneiform.io</a>&nbspتصميم&#x60c تطوير&#x60c و صيانة بواسطة</p>
+      			        <p>.٢٠١٤ شركة برج إيكال. جميع الحقوق محفوظة <strong>&copy</strong></p>
+              </div>
+    </div>
 
 		   <%end%>
       
-          </body>
-          </html>
+</body>
+</html>
