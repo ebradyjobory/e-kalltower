@@ -1,164 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>E-Kall Tower Co. | Construction &amp; General Building</title>
-  <head> 
+<head> 
       <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
       <%= stylesheet_link_tag "normalize", media: "all", "data-turbolinks-track" => true %>
       <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
       <%= javascript_include_tag "jquery.prettyPhoto", "data-turbolinks-track" => true %>
-      <%= javascript_include_tag "jquery.fittext", "data-turbolinks-track" => true %>
+      <%= javascript_include_tag "jquery.fittext", "data-turbolinks-track" => true %>     
       <%= stylesheet_link_tag "prettyPhoto", media: "all", "data-turbolinks-track" => true %>
-
-
-
+      <%= stylesheet_link_tag "style", media: "all", "data-turbolinks-track" => true %>
       <%= csrf_meta_tags %>
       <%= metamagic %>
       <link href='http://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-	  <link href='http://fonts.googleapis.com/earlyaccess/droidarabickufi.css' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/earlyaccess/droidarabickufi.css' rel='stylesheet' type='text/css'>
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
-  </head>
-        <!-- <nav class="navbar-brand"> -->
-        <div class="header">
-			<% if  I18n.locale == :en %>
-          <div class="logo">
-          <%= link_to image_tag("logo3.png", :size => "150x50", :alt => 'logo', :class => "gallery"), root_path %>
-          </div>
-		  <%else%>
-          <div class="logo-arabic">
-          <%= link_to image_tag("logo3.png", :size => "150x50", :alt => 'logo', :class => "gallery"), root_path %>
-          </div>
-		  <%end%>
-   
-  <body>
-     <script type="text/javascript">
-            $(document).ready(function(){
-              $("a[rel^='prettyPhoto']").prettyPhoto();
-            });
-       </script>
-  
-	<% if  I18n.locale == :en %>
-         <div class="container-en">
-            <div class="nav-links-en res">
+</head>
+<body>
+
+<div id="wrapper">
+      <div class="header">
+          <% if  I18n.locale == :en %>
+            <div class="logo">
+                <%= link_to image_tag("logo3.png", :size => "150x50", :alt => 'logo', :class => "gallery"), root_path %>
+                </div>
+          <%else%>
+                <div class="logo-arabic">
+                <%= link_to image_tag("logo3.png", :size => "150x50", :alt => 'logo', :class => "gallery"), root_path %>
+                </div>
+          <%end%>
+          <% if  I18n.locale == :en %>
+            <div class="container-en">
+             <div class="nav-links-en res">
               <ul class="links">
-        			  <li><%= link_to "ABOUT", about_path, :class => 'about' %></li>
-        			  <li><%= link_to "PROJECTS", projects_path, :class => 'project'%></li>
-        			  <li><%= link_to "SERVICES", services_path, :class => 'service'%></li>
-        			  <li><%= link_to "CONTACT", contact_path, :class => 'contact'%></li>
-        			  <li class="arabic"><%= link_to "العربية", :locale=>'ar'%></li>
-        			  </ul>
-              
+                <li><%= link_to "ABOUT", about_path, :class => 'about' %></li>
+                <li><%= link_to "PROJECTS", projects_path, :class => 'project'%></li>
+                <li><%= link_to "SERVICES", services_path, :class => 'service'%></li>
+                <li><%= link_to "CONTACT", contact_path, :class => 'contact'%></li>
+                <li class="arabic"><%= link_to "العربية", :locale=>'ar'%></li>
+              </ul>
              </div>
-          </div>
-             <a href="#" class="pull"></a> 
-
-	<%elsif%>
-	         <div class="nav-links-ar res">
-	            <ul class="links-ar">
-  				  <li class="english"><%= link_to "English", :locale=>'en'%></li>
-  				  <li><%= link_to "إتصل بنا", contact_path, :class => 'contact'%></li>
-  				  <li><%= link_to "الخدمات", services_path, :class => 'service' %></li>
-  				  <li><%= link_to "المشاريع", projects_path, :class => 'project' %></li>
-  				  <li><%= link_to "من نحن", about_path, :class => 'about' %></li>
-			  </ul>
-         
-			  <%end%>
-
-        </div>
-    </div>
-     <a href="#" class="pull"></a> 
-
-
-      <% if  I18n.locale == :en %>
-             <div class="container-en">
-                 <%= yield %>
-               </div>
-        <%else%>
-               <div class="container-ar">
-                 <%= yield %>
-               </div>
-         <%end%>
-
-            <% if current_page? '/' %>
-            <%elsif%>
-             <% if current_page? root_path %>
-             <!-- do nothing -->
-             <%else%>
-             <!-- insert the white section -->
-             <div class="white-section">
-               <%= yield :section %>
-             </div>
-             <%end%>
-             <%end%>
-
-     <% if  I18n.locale == :en %>
-        <div class="footer res-footer">
-                  <div class="line-separator-a"></div>
-                <div class="footer-column-a">
-                    <ul>
-                      <li><a href="/">HOME</a></li>
-                      <li><a href="/about">ABOUT</a></li>
-                      <li><a href="/projects">PROJECTS</a></li>
-                      <li><a href="/services">SERVICES</a></li>
-                      <li><a href="/contact">CONTACT</a></li>
-                    </ul>
-                </div>
-
-                <div class="line-separator-b"></div>
-                <div class="footer-column-b">  
-            			  <ul>
-                        <li><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></li>
-                        <li>+964.770.700.0200</li>
-                        <li>Baghdad | Erbil | Sulaimaniyah</li>
-                        <li id="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li>
-            		    </ul>
-                </div>
-
-            <div class="copyrights">
-                <p><strong>&copy</strong> 2014 E-Kall Tower Company. All Rights Reserved.</p>
-                <p>Designed, developed, maintained by <a href="http://cuneiform.io" target="_blank">cuneiform.io</a></p>
             </div>
-        </div>
+
+            <a href="#" class="pull"></a> 
+
+          <%elsif%>
+           <div class="nav-links-ar res">
+              <ul class="links-ar">
+                <li class="english"><%= link_to "English", :locale=>'en'%></li>
+                <li><%= link_to "إتصل بنا", contact_path, :class => 'contact'%></li>
+                <li><%= link_to "الخدمات", services_path, :class => 'service' %></li>
+                <li><%= link_to "المشاريع", projects_path, :class => 'project' %></li>
+                <li><%= link_to "من نحن", about_path, :class => 'about' %></li>
+              </ul>
+            </div>  
+            <a href="#" class="pull"></a>           
+           <%end%>
+      </div> <!-- .header  --> 
 
 
-		  <%else%>
 
-     
-    <div class="footer-ar res-footer">
-      <div class="line-separator-a-ar"></div>
-              <div class="footer-column-ar-a">
-                 <ul>
-                   <li><a href="/ar">ألرئيسية</a></li>
-                   <li><a href="/ar/about">من نحن</a></li>
-                   <li><a href="/ar/projects">المشاريع</a></li>
-                   <li><a href="/ar/services">الخدمات</a></li>
-                   <li><a href="/ar/contact">إتصل بنا</a></li>
-                 </ul>
-              </div>
-               <div class="line-separator-b-ar"></div>
-              <div class="footer-column-ar-b">
-      	 			  <ul>
-      	             <li><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></li>
-      	             <li>٧٠٠٠٢٠٠ ٧٧٠ ٩٦٤+</li>
-      	             <li>بغداد |  أربيل | السليمانية </li>
-      	             <li id="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li>
-      	 		     </ul>
-              </div>
+            
 
-              <div class="copyrights-ar">
-                  <p><a href="http://cuneiform.io" target="_blank">cuneiform.io</a>&nbspتصميم&#x60c تطوير&#x60c و صيانة بواسطة</p>
-      			        <p>.٢٠١٤ شركة برج إيكال. جميع الحقوق محفوظة <strong>&copy</strong></p>
-              </div>
-    </div>
+              <!-- main page content -->
+              <% if  I18n.locale == :en %>
+                     <div class="container-en">
+                         <%= yield %>
+                      </div>
+              <%else%>
+                      <div class="container-ar">
+                         <%= yield %>
+                      </div>
+              <%end%>
 
-		   <%end%>
+             <!-- conditional euqtion to git rid of white space in main pages -->
+              <% if current_page? '/' %>
+              <%elsif%>
+                <% if current_page? root_path %>
+                 <!-- do nothing -->
+                <%else%>
+                 <!-- insert the white section -->
+                  <div class="white-section">
+                     <%= yield :section %>
+                  </div>
+                <%end%>
+              <%end%>
+
+            <!--  English footer -->
+             <% if  I18n.locale == :en %>
+               <div class="footer res-footer">
+                      <div class="line-separator-a"></div>
+                      <div class="footer-column-a">
+                          <ul>
+                            <li><a href="/">HOME</a></li>
+                            <li><a href="/about">ABOUT</a></li>
+                            <li><a href="/projects">PROJECTS</a></li>
+                            <li><a href="/services">SERVICES</a></li>
+                            <li><a href="/contact">CONTACT</a></li>
+                          </ul>
+                      </div>
+
+                      <div class="line-separator-b"></div>
+                      <div class="footer-column-b">  
+                  			  <ul>
+                            <li><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></li>
+                            <li>+964.770.700.0200</li>
+                            <li>Baghdad | Erbil | Sulaimaniyah</li>
+                            <li id="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li>
+                  		    </ul>
+                      </div>
+                    <div class="copyrights">
+                        <p><strong>&copy</strong> 2014 E-Kall Tower Company. All Rights Reserved.</p>
+                        <p>Designed, developed, maintained by <a href="http://cuneiform.io" target="_blank">cuneiform.io</a></p>
+                    </div>
+               </div> <!-- .footer res-footer -->
+
+        	  <%else%>
+
+            <!--  Arabic footer -->
+            <div class="footer-ar res-footer">
+                      <div class="line-separator-a-ar"></div>
+                      <div class="footer-column-ar-a">
+                         <ul>
+                           <li><a href="/ar">ألرئيسية</a></li>
+                           <li><a href="/ar/about">من نحن</a></li>
+                           <li><a href="/ar/projects">المشاريع</a></li>
+                           <li><a href="/ar/services">الخدمات</a></li>
+                           <li><a href="/ar/contact">إتصل بنا</a></li>
+                         </ul>
+                      </div>
+                      <div class="line-separator-b-ar"></div>
+                      <div class="footer-column-ar-b">
+              	 			  <ul>
+            	             <li><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></li>
+            	             <li>٧٠٠٠٢٠٠ ٧٧٠ ٩٦٤+</li>
+            	             <li>بغداد |  أربيل | السليمانية </li>
+            	             <li id="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li>
+              	 		     </ul>
+                      </div>
+
+                      <div class="copyrights-ar">
+                          <p><a href="http://cuneiform.io" target="_blank">cuneiform.io</a>&nbspتصميم&#x60c تطوير&#x60c و صيانة بواسطة</p>
+              			        <p>.٢٠١٤ شركة برج إيكال. جميع الحقوق محفوظة <strong>&copy</strong></p>
+                      </div>
+
+              </div>   <!-- .footer-ar res-footer -->
+              
+
+              <%end%>
+
+
+</div><!-- /#wrapper -->   
+
+                        <button class="nav-toggler toggle-push-left pull">Push Menu Left</button>
+                        <button class="nav-toggler toggle-push-right pull">Push Menu Right</button>
+                   
+
+        <nav class="menu push-menu-right">
+          <ul>
+             <li><a href="#" class="pull"></a> </li>
+                <li><%= link_to "ABOUT", about_path, :class => 'about' %></li>
+                <li><%= link_to "PROJECTS", projects_path, :class => 'project'%></li>
+                <li><%= link_to "SERVICES", services_path, :class => 'service'%></li>
+                <li><%= link_to "CONTACT", contact_path, :class => 'contact'%></li>
+                <li class="arabic"><%= link_to "العربية", :locale=>'ar'%></li>
+          </ul>
+        </nav>
+
+        <nav class="menu push-menu-left">
+          <ul> 
+            <li><%= link_to "إتصل بنا", contact_path, :class => 'contact'%></li>
+            <li><%= link_to "الخدمات", services_path, :class => 'service' %></li>
+            <li><%= link_to "المشاريع", projects_path, :class => 'project' %></li>
+            <li><%= link_to "من نحن", about_path, :class => 'about' %></li>
+            <li class="english"><%= link_to "English", :locale=>'en'%></li>
+          </ul>
+        </nav>
+  
+
+
+
+
+<!-- J Query -->
 
 <script>
-  jQuery(".res").fitText(4);
-  jQuery(".res-footer").fitText(7);
-  jQuery(".res-statement").fitText(7);
+    jQuery(".res").fitText(4);
+    jQuery(".res-footer").fitText(7);
+    jQuery(".res-statement").fitText(7);
+</script>
 
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+    });
+</script>
+
+<%= javascript_include_tag "classie", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "nav", "data-turbolinks-track" => true %>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34160351-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
       
 </body>
