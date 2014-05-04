@@ -17,8 +17,16 @@ button {
 button:focus {outline:none;} button::-moz-focus-inner {border:0;}
 
 
+.push {
+height: 2em;
+}
+
 
 #wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
     position: relative;
     z-index: 10;
     top: 0;

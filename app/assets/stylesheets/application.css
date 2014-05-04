@@ -69,6 +69,7 @@ body {
   max-width: 145%;
   margin: auto;
 }
+
 .ar-link {
   color: blue;
 }
@@ -125,18 +126,18 @@ body#services-page {
   background-image: url('services2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
- background-size: cover;
+  background-size: cover;
 }
 
 
 .container-en {
   margin: auto;
   width: auto;
-  margin:  10% 49%  10% 3%;
+  margin:  4em 49% 8em 3%;
 }
 
 .container-en h2 {
- color: #ecf0f1;
+  color: #ecf0f1;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
@@ -480,7 +481,7 @@ text-decoration: none;
   border-top: .1em solid #444;
   text-align: left;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: #bdc3c7;
 }
 
@@ -491,7 +492,7 @@ text-decoration: none;
   border-top: .1em solid #444;
   text-align: left;
   font-family: 'Droid Arabic Kufi', serif;
-  font-size: 0.75em;
+  font-size: 0.7em;
   color: #bdc3c7;
   direction: ltr;
 }
@@ -505,7 +506,7 @@ text-decoration: none;
   text-align: right;
   font-family: 'Roboto', sans-serif;
   font-size: 1.0em;
-  margin-top: -2%;
+  margin-top: -2.5%;
 }
 
 .copyrights p:nth-child(1){
@@ -516,7 +517,12 @@ text-decoration: none;
   text-align: right;
   font-family: 'Droid Arabic Kufi', serif;
   font-size: 1.0em;
-  margin-top: -2%;
+  margin-top: -3%;
+} 
+.copyrights-ar p:nth-child(1){
+  font-family: 'Droid Arabic Kufi', serif;
+  font-size: 1.0em;
+  margin-top: 0.5%;
 } 
 
 .copyrights p:nth-child(2) a{
@@ -564,8 +570,10 @@ text-decoration: none;
   background-repeat: repeat no-repeat;
   padding-top: 1%;
   height:220px;
-  bottom: 0;
+  position: absolute;
+  margin-top: 5%;
   width: 100%;
+  height: 12em;
 
 }
 
@@ -574,8 +582,12 @@ text-decoration: none;
   background-repeat: repeat no-repeat;
   height:220px;
   padding-top: 1%;
-  bottom: 0;
+  height:220px;
+  position: absolute;
+  margin-top: 5%;
   width: 100%;
+  height: 12em;
+
   direction: rtl;
 }
 
@@ -944,6 +956,7 @@ span p {
 }
 
 .white-section {
+  margin-bottom: -8%;
   padding-left: 3.5%;
   padding-top: 1%;
   padding-right: 2%;
@@ -951,6 +964,7 @@ span p {
   font-family: 'Roboto', serif;
   text-shadow: none;
   opacity: 0.85;
+  position: relative;
 }
 
 #mail a {
@@ -1596,14 +1610,20 @@ button {
 
 .footer {
   position: absolute;
-  top: 600px;
- 
-  height: 250%;
+  top: 400px;
+  height: 40%;
+}
+
+.push {
+height: 25em !important;
 }
 
 .container-en {
-  position: absolute;
+  margin: auto;
+  width: auto;
+  margin:  5em 49% 1em 3% !important;
 }
+
 
 .footer-ar {
   padding-bottom: -5%;
@@ -1657,8 +1677,11 @@ button {
 
 .footer {
   padding-bottom: -5%;
-  height: 30%;
-  position:fixed;
+  height: 40%;
+  position:absolute;
+}
+.push {
+height: 10em !important;
 }
 
 .logo img {
@@ -1722,7 +1745,7 @@ button {
 
 
 /*<======= iPhone  =======> */
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 600px) {
 
 .footer-column-b {
   margin-left: -4%;
