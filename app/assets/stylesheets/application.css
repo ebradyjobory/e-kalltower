@@ -5,6 +5,27 @@
  *= require_tree .
  */
 
+ button   {  
+    background: url('nav-icon.png') no-repeat ; 
+    width: 3%;  
+    height: 3%; 
+    top: 4%;
+    z-index: 20;
+    left: 96%; 
+    position: absolute;
+    display: none;   
+}  
+
+/*button  {  
+    background: url('nav-icon.png') no-repeat ; 
+    width: 3%;  
+    height: 3%; 
+    top: 4%;
+    z-index: 20;
+    right: 80%; 
+    position: absolute;
+    display: none;   
+}  */
 
 .logo {
   margin-left: 7%;
@@ -20,6 +41,28 @@
 
 
 }
+
+
+
+
+.nav-links-en a.pull {  
+    display: block; 
+    width: 100%;  
+    position: relative; 
+    width: 100%; 
+}  
+
+.nav-links-en a.pull:after {  
+    content:"";  
+    background: url('nav-icon.png') no-repeat ; 
+    position: fixed; 
+    width: 40%;  
+    height: 10%;    
+    left: 95%;  
+    top: 3.5%;  
+}  
+
+
 
 body {
   width: auto;
@@ -529,9 +572,10 @@ text-decoration: none;
 .footer-ar {
   background-image: linear-gradient(#222222, #111111);
   background-repeat: repeat no-repeat;
-  padding-bottom: 1%;
+  height:220px;
   padding-top: 1%;
-  margin: 0%;
+  bottom: 0;
+  width: 100%;
   direction: rtl;
 }
 
@@ -1445,23 +1489,6 @@ p, h1, h2, h3 {
 
 }
 
- a.pull {  
-    width: 100%;  
-    width: 100%; 
-    display: none; 
-
-}  
-
- a.pull:after {  
-    content:"";  
-    background: url('nav-icon.png') no-repeat ; 
-    position: absolute; 
-    width: 40%;  
-    height: 10%;    
-    display: inline-block;
-    left: 95%;  
-    top: 3.5%;  
-}  
 
 
 /* droplist menu for mobil 
@@ -1477,7 +1504,9 @@ p, h1, h2, h3 {
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
 
-
+button {
+  display: block;
+}
  .nav-links-en, .nav-links-ar {
   display: none;
  }
@@ -1485,20 +1514,40 @@ p, h1, h2, h3 {
 .footer-column-a {
   display: none;
 }
+
+.footer-column-ar-a {
+  display: none;
+}
  
 .line-separator-b, .line-separator-a {
+  display: none;
+}
+.line-separator-b-ar, .line-separator-a-ar {
   display: none;
 }
 
 .footer-column-b {
   margin-left: -1%;
   padding-left: 0%;
-  font-size: 1em !important;
+  font-size: 1.1em !important;
   width: 100%;
 }
 
 .footer-column-b li {
   padding: 0%;
+  margin-left: 0%;
+}
+
+.footer-column-b-ar {
+  margin-right: 0%;
+  padding-right: 0%;
+  font-size: 1.1em !important;
+  width: 100%;
+}
+
+
+.footer-column-ar-b  {
+  margin-right: 0%;
 }
 
 .copyrights {
@@ -1506,25 +1555,39 @@ p, h1, h2, h3 {
   border-top: 1px solid #444;
   margin-left: 1%;
   margin-right: 4%;
-  font-size: 0.6em !important;
+  font-size: 0.5em !important;
   width: 95%;
-  padding-top: -2%;
-  margin-top: 14%;
+  padding-top: -8%;
+  margin-top: 15%;
+  margin-bottom: -5%;
+}
 
+.copyrights-ar {
+  display: block;
+  border-top: 1px solid #444;
+  margin-left: 1%;
+  margin-right: 4%;
+  font-size: 0.5em !important;
+  width: 95%;
+  padding-top: -8%;
+  margin-top: 15%;
+  margin-bottom: -5%;
+
+}
+
+.copyrights-ar p:nth-child(2) {
+  margin-top: -4%;
 }
 
 .home h2, .contact h2, .projects h2, .services h2, .about h2 {
   font-size: 3em !important;
 
 }
+
+
 .home p, .contact p, .projects p, .services p, .about p{
   font-size: 1.5em !important;
 }
- a.pull {  
-    display: block; 
-
-  }
-
 
 .logo img {
   margin-bottom: 2% !important;
@@ -1532,6 +1595,28 @@ p, h1, h2, h3 {
 }
 
 .footer {
+  position: absolute;
+  top: 600px;
+ 
+  height: 250%;
+}
+
+.container-en {
+  position: absolute;
+}
+
+.footer-ar {
+  padding-bottom: -5%;
+  font-size: 1.3em !important;
+  height: 30%;
+}
+
+.statement-ar h2 {
+  font-size: 2.5em !important;
+}
+
+.statement-ar p {
+  font-size: 1.3em !important;
 }
 
 
@@ -1541,9 +1626,185 @@ p, h1, h2, h3 {
 
 
 
+
 }
 
 
-/*<======= iPhone =======> */
+/*<======= iPhone  =======> */
+@media only screen and (max-width : 768px) {
+
+button {
+  display: block;
+}
+ .nav-links-en, .nav-links-ar {
+  display: none;
+ }
+
+.footer-column-a {
+  display: none;
+}
+
+.footer-column-ar-a {
+  display: none;
+}
+ 
+.line-separator-b, .line-separator-a {
+  display: none;
+}
+.line-separator-b-ar, .line-separator-a-ar {
+  display: none;
+}
+
+.footer {
+  padding-bottom: -5%;
+  height: 30%;
+  position:fixed;
+}
+
+.logo img {
+  margin-bottom: 2% !important;
+
+}
+
+.footer-column-b {
+  margin-left: -3%;
+  font-size: 1.4em;
+}
+
+.footer-ar {
+  padding-bottom: -5%;
+  font-size: 1.3em !important;
+  height: 30%;
+}
 
 
+.copyrights p:nth-child(2) {
+  margin-top: -4% !important;
+}
+
+.home h2, .contact h2, .projects h2, .services h2, .about h2 {
+  font-size: 3.5em !important;
+
+}
+
+.home p, .contact p, .projects p, .services p, .about p{
+  font-size: 2em !important;
+}
+
+.copyrights {
+  position: absolute;
+  display: block;
+  border-top: 1px solid #444;
+  margin-left: 2%;
+  margin-right: 4%;
+  font-size: 0.6em !important;
+  width: 95%;
+  padding-top: 0%;
+  margin-top: 18%;
+  margin-bottom: -5%;
+}
+
+.copyrights-ar {
+  display: block;
+  border-top: 1px solid #444;
+  margin-left: 1%;
+  margin-right: 4%;
+  font-size: 0.6em !important;
+  width: 95%;
+  padding-top: -8%;
+  margin-top: 15%;
+  margin-bottom: -5%;
+
+}
+
+}
+
+
+
+/*<======= iPhone  =======> */
+@media only screen and (max-width : 500px) {
+
+.footer-column-b {
+  margin-left: -4%;
+  font-size: 2.5em !important;
+}
+
+.copyrights {
+  position: absolute;
+  border-top: 1px solid #444;
+  margin-left: 18%;
+  margin-right: 0%;
+  font-size: 0.6em !important;
+  width: 60%;
+  padding-top: 1%;
+  margin-top: 30%;
+  margin-bottom: 0%;
+  text-align: center;
+}
+
+.copyrights-ar {
+  display: absolute;
+  border-top: 1px solid #444;
+  margin-left: 1%;
+  margin-right: 4%;
+  font-size: 0.6em !important;
+  width: 95%;
+  padding-top: -8%;
+  margin-top: 15%;
+  margin-bottom: -5%;
+
+}
+
+.copyrights p:nth-child(2) {
+  margin-left: -15% !important;
+  width: 100%;
+}
+
+
+.home h2, .contact h2, .projects h2, .services h2, .about h2 {
+  font-size: 6em !important;
+  text-align: center;
+  width: 100%;
+
+}
+
+
+.home p, .contact p, .projects p, .services p, .about p{
+  font-size: 2.3em !important;
+
+}
+
+
+.container-en {
+  text-align: center;
+  position: absolute;
+  width: 90%;
+
+}
+
+ button   {  
+    background: url('nav-icon.png') no-repeat ; 
+    width: 5%;  
+    height: 3%; 
+    top: 4%;
+    z-index: 20;
+    left: 90%; 
+    position: absolute;
+}  
+
+.footer {
+  position: absolute;
+  height: 180px;
+  top: 800%;
+}
+
+.about-container, .projects-container, .contact-container {
+  font-size: 0.2em !important;
+}
+
+.about-columns {
+  width: 100%;
+}
+
+
+}

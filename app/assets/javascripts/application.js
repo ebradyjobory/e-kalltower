@@ -24,11 +24,6 @@
 /* 
 ====================== drop list ends here*/
 
-$(document).ready(function(){
-
-
-
-});
 
 // $('.glow').click(function(){
 //     $(this).next('.pabout').toggle();
