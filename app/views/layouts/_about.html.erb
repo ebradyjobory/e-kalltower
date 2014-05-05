@@ -78,32 +78,35 @@
 
 <script>
 $('.glow').click(function(){
-    $(this).next('.pabout').toggle();
+    $(this).next('.pabout').slideToggle(50);
     });
-var $arrowRightAboutOmer = $('<div id="arrow_about_omer"></div>');
-var $arrowRightAboutErica = $('<div id="arrow_about_erica"></div>');
-var $arrowRightAboutOmerAr= $('<div id="arrow_about_omer_ar"></div>');
-var $arrowRightAboutEricaAr = $('<div id="arrow_about_erica_ar"></div>');
+$('.glow').hover(function(){
+    $(this).toggleClass('glowing');
+    });
+// var $arrowRightAboutOmer = $('<div id="arrow_about_omer"></div>');
+// var $arrowRightAboutErica = $('<div id="arrow_about_erica"></div>');
+// var $arrowRightAboutOmerAr= $('<div id="arrow_about_omer_ar"></div>');
+// var $arrowRightAboutEricaAr = $('<div id="arrow_about_erica_ar"></div>');
 
-$(".arrow_about_omer").hover(function(){
-	$(this).prepend($arrowRightAboutOmer);}, function(){
-	$arrowRightAboutOmer.remove();
-	});
+// $(".arrow_about_omer").hover(function(){
+// 	$(this).prepend($arrowRightAboutOmer);}, function(){
+// 	$arrowRightAboutOmer.remove();
+// 	});
 
-  	$(".arrow_about_erica").hover(function(){
-	$(this).prepend($arrowRightAboutErica);}, function(){
-	$arrowRightAboutErica.remove();
-	});
+//   	$(".arrow_about_erica").hover(function(){
+// 	$(this).prepend($arrowRightAboutErica);}, function(){
+// 	$arrowRightAboutErica.remove();
+// 	});
 
-  	$(".arrow_about_omer_ar").hover(function(){
-	$(this).prepend($arrowRightAboutOmerAr);}, function(){
-	$arrowRightAboutOmerAr.remove();
-	});
+//   	$(".arrow_about_omer_ar").hover(function(){
+// 	$(this).prepend($arrowRightAboutOmerAr);}, function(){
+// 	$arrowRightAboutOmerAr.remove();
+// 	});
 
-  	$(".arrow_about_erica_ar").hover(function(){
-	$(this).prepend($arrowRightAboutEricaAr);}, function(){
-	$arrowRightAboutEricaAr.remove();
-	});
+//   	$(".arrow_about_erica_ar").hover(function(){
+// 	$(this).prepend($arrowRightAboutEricaAr);}, function(){
+// 	$arrowRightAboutEricaAr.remove();
+// 	});
 
 
 </script>

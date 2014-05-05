@@ -339,39 +339,43 @@ $(".fancybox").fancybox({
 
 $( "h3" ).click(function() {
 $(this).next('p').toggle();
+
+  });
+
+$( "h3" ).hover(function() {
+
+$(this).toggleClass('glowing');
   });
 
 
-
-
-var $arrowRight = $('<div id="arrowright"></div>');
-var $arrowRightAr = $('<div id="arrowright-ar"></div>');
-var $arrowRightBaghdadAr = $('<div id="arrowright-baghdad-ar"></div>');
-var $arrowRightShort = $('<div id="arrowright_short"></div>');
-var $arrowRightBaghdad = $('<div id="arrowright_baghdad"></div>');
+// var $arrowRight = $('<div id="arrowright"></div>');
+// var $arrowRightAr = $('<div id="arrowright-ar"></div>');
+// var $arrowRightBaghdadAr = $('<div id="arrowright-baghdad-ar"></div>');
+// var $arrowRightShort = $('<div id="arrowright_short"></div>');
+// var $arrowRightBaghdad = $('<div id="arrowright_baghdad"></div>');
 
 // $(".arrow").hover(function(){
 // 	$(this).prepend($arrowRight);}, function(){
 // 	$arrowRight.remove();
 // 	});
 
-$(".arrow").on({
+// $(".arrow").on({
 
-	mouseover: function(){
-		$(this).prepend($arrowRight);
-	},
+// 	mouseover: function(){
+// 		$(this).prepend($arrowRight);
+// 	},
 
-	mouseleave: function(){
-		$(this).find($arrowRight).remove();
-	},
+// 	mouseleave: function(){
+// 		$(this).find($arrowRight).remove();
+// 	},
 
-	click: function(){
-		$(this).prepend($arrowRight);
+// 	click: function(){
+// 		$(this).prepend($arrowRight);
 
-	},
+// 	},
 
 
-});
+// });
 
 
 
@@ -379,31 +383,32 @@ $(".arrow").on({
 // 	$(this).prepend($arrowRight);
 // 	});
 
-$(".arrow-ar").hover(function(){
-	$(this).prepend($arrowRightAr);}, function(){
-	$arrowRightAr.remove();
-	});
+// $(".arrow-ar").hover(function(){
+// 	$(this).prepend($arrowRightAr);}, function(){
+// 	$arrowRightAr.remove();
+// 	});
 
 
-$(".arrow-ar").hover(function(){
-	$(this).prepend($arrowRightAr);}, function(){
-	$arrowRightAr.remove();
-	});
+// $(".arrow-ar").hover(function(){
+// 	$(this).prepend($arrowRightAr);}, function(){
+// 	$arrowRightAr.remove();
+// 	});
 
-  	$(".arrow-baghdad-ar").hover(function(){
-	$(this).prepend($arrowRightBaghdadAr);}, function(){
-	$arrowRightBaghdadAr.remove();
-	});
+//   	$(".arrow-baghdad-ar").hover(function(){
+// 	$(this).prepend($arrowRightBaghdadAr);}, function(){
+// 	$arrowRightBaghdadAr.remove();
+// 	});
 
-$(".arrow_short").hover(function(){
-	$(this).prepend($arrowRightShort);}, function(){
-	$arrowRightShort.remove();
-	});
+// $(".arrow_short").hover(function(){
+// 	$(this).prepend($arrowRightShort);}, function(){
+// 	$arrowRightShort.remove();
+// 	});
 
-  	$(".arrow_baghdad").hover(function(){
-	$(this).prepend($arrowRightBaghdad);}, function(){
-	$arrowRightBaghdad.remove();
-	});
+//   	$(".arrow_baghdad").hover(function(){
+// 	$(this).prepend($arrowRightBaghdad);}, function(){
+// 	$arrowRightBaghdad.remove();
+// 	});
+
 
 
 

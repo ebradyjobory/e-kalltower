@@ -88,7 +88,6 @@
                   </div>
                 <%end%>
               <%end%>
-<div class="push"></div>
             <!--  English footer -->
              <% if  I18n.locale == :en %>
                <div class="footer res-footer">
@@ -167,27 +166,31 @@
           </ul>
         </nav>
 
-        <nav class="menu push-menu-left">
+        <nav class="menu-ar push-menu-left">
              <ul> 
                 <li><%= link_to "إتصل بنا", contact_path, :class => 'contact'%></li>
                 <li><%= link_to "الخدمات", services_path, :class => 'service' %></li>
                 <li><%= link_to "المشاريع", projects_path, :class => 'project' %></li>
                 <li><%= link_to "من نحن", about_path, :class => 'about' %></li>
-                <li class="english"><%= link_to "English", :locale=>'en'%></li>
+                <li class="english-mob"><%= link_to "English", :locale=>'en'%></li>
                </ul>
         </nav>
   
-    <button  class="nav-toggler toggle-push-right en-btn"></button> 
-     <button  class="nav-toggler toggle-push-left"></button> 
+     <button  class="nav-toggler toggle-push-right en-btn"></button> 
+     <button  class="nav-toggler toggle-push-left ar-btn"></button> 
 
 <% if  I18n.locale == :en %>
+
 <script>
+$('button').addClass('en-btn');
 $('.toggle-push-left').hide();
 </script>
 
 <%elsif%>
 <script>
+$('button').addClass('ar-btn');
 $('.toggle-push-right').hide();
+
 </script>
 
 <%end%>
