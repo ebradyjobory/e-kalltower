@@ -17,10 +17,7 @@ html, body {
  
 .mainfooter {
     display: table-row;
-    height: 1px;
 }
-
-
 
 /* button   {  
     background: url('nav-icon.png') no-repeat ; 
@@ -55,12 +52,7 @@ html, body {
   margin-top: 0.5%;
   padding-bottom: 4%; 
   direction: rtl;
-
-
 }
-
-
-
 
 .nav-links-en a.pull {  
     display: block; 
@@ -79,13 +71,6 @@ html, body {
     top: 3.5%;  
 }  
 
-
-
-body {
-  width: auto;
-  max-width: 145%;
-  margin: auto;
-}
 
 .ar-link {
   color: blue;
@@ -148,7 +133,6 @@ body#services-page {
 
 
 .container-en {
-  margin: auto;
   width: auto;
   margin:  4em 49% 8em 3%;
 }
@@ -160,6 +144,7 @@ body#services-page {
   font-size: 2em;
   font-weight: 400;
   margin-bottom: 1%;
+  margin-top: -13%;
 
 }
 
@@ -1626,7 +1611,6 @@ p, h1, h2, h3 {
 
 .about-container p {
   font-size: 1.5em;
-
 }
 
 
@@ -1638,7 +1622,7 @@ p, h1, h2, h3 {
 .footer {
   position: absolute;
   margin-top: 0%;
-  height: 25%;
+  height: 26%;
 }
 
 .footer-ar {
@@ -1658,7 +1642,13 @@ p, h1, h2, h3 {
   margin:  7% 49% 10% 3% !important;
 }
 
+.statement h2 {
+  font-size: 2.5em !important;
+}
 
+.statement p {
+  font-size: 1.3em !important;
+}
 
 .statement-ar h2 {
   font-size: 2.5em !important;
@@ -1854,6 +1844,14 @@ body.contact a.contact {
     position: absolute;
 }
 
+.statement h2 {
+  font-size: 4em !important;
+}
+
+.statement p {
+  font-size: 2em !important;
+}
+
 }
 
 
@@ -1873,6 +1871,16 @@ button   {
   display: none;
 }
 
+.container-en h2 {
+  color: #ecf0f1;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 1%;
+  margin-top: 18%;
+
+}
 
 .footer-column-b {
   margin-left: -4%;
@@ -1959,16 +1967,23 @@ button   {
     position: absolute;
 }  */
 
-.footer {
+/*.footer {
   position: absolute;
-  height: 30%;
+  height: 40%;
   margin-top: 100%;
+}*/
+.footer {
+
+
+  margin-top: 80%;
+  display: table-row;
+  height: 40%;
+ 
 }
 
 .footer-ar {
-  position: absolute;
-  height: 80%;
-  margin-top: 50%;
+  display: table-row;
+  height: 0%;
  
 }
 
