@@ -53,18 +53,11 @@
                 <li><%= link_to "من نحن", about_path, :class => 'about' %></li>
               </ul>
             </div> 
-             <a href="#" class="pull"></a> 
-
-            
-
-                    
+             <a href="#" class="pull"></a>      
            <%end%>
       </div> <!-- .header  --> 
 
-
-
-            
-
+       <div class="container">
               <!-- main page content -->
               <% if  I18n.locale == :en %>
                      <div class="container-en">
@@ -88,8 +81,12 @@
                   </div>
                 <%end%>
               <%end%>
+
+           </div> <!-- container -->   
             <!--  English footer -->
+
              <% if  I18n.locale == :en %>
+             <div class="mainfooter">
                <div class="footer res-footer">
                       <div class="line-separator-a"></div>
                       <div class="footer-column-a">
@@ -147,14 +144,10 @@
                       </div>
 
               </div>   <!-- .footer-ar res-footer -->
-              
-
               <%end%>
 
-
-</div><!-- /#wrapper -->   
-
-                            
+            </div> <!-- .mainfooter -->
+   </div><!-- /#wrapper -->  
 
         <nav class="menu push-menu-right nav-slide-right">
           <ul>
@@ -172,7 +165,7 @@
                 <li><%= link_to "الخدمات", services_path, :class => 'service' %></li>
                 <li><%= link_to "المشاريع", projects_path, :class => 'project' %></li>
                 <li><%= link_to "من نحن", about_path, :class => 'about' %></li>
-                <li class="english-mob"><%= link_to "English", :locale=>'en'%></li>
+                <li class="english"><%= link_to "English", :locale=>'en'%></li>
                </ul>
         </nav>
   
