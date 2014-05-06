@@ -135,7 +135,7 @@ body#services-page {
 
 .container-en {
   width: auto;
-  margin:  4em 49% 10em 3%;
+  margin:  14% 49% 15% 3%;
 }
 
 .container-en h2 {
@@ -180,7 +180,7 @@ iframe {
 
 .nav-links-en  {
   margin-left: 50%;
-  margin-top: -47%;
+  margin-top: -52%;
   padding-top: 0.4%;
   margin-bottom: 0%;
   width: 200%;
@@ -576,11 +576,9 @@ text-decoration: none;
   background-image: linear-gradient(#222222, #111111);
   background-repeat: repeat no-repeat;
   padding-top: 1%;
-  height:220px;
   position: absolute;
-  margin-top: 0%;
+  margin-top: 5%;
   width: 100%;
-  height: 12em;
 
 }
 
@@ -596,6 +594,10 @@ text-decoration: none;
   height: 12em;
 
   direction: rtl;
+}
+
+.space-en {
+  margin-top: -10%;
 }
 
 .copyrights a {
