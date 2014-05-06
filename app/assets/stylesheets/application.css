@@ -1730,6 +1730,11 @@ body.contact a.contact {
   margin-top: 90%;
 }
 
+.space-ar {
+  position: relative;
+ margin-bottom: 70%;
+
+}
 
 }
 
@@ -1982,7 +1987,9 @@ display: none;
   width: 100%;
 }
 
-
+.statement-ar{
+  margin-left: 5%;
+}
 .statement-ar h2{
   font-size: 6em !important;
 }
@@ -1993,7 +2000,6 @@ display: none;
 
 .container-en {
   text-align: center;
-  position: absolute;
   width: 90%;
   margin-top: 6%;
 
@@ -2024,13 +2030,11 @@ button   {
   margin-top: 100%;
 }*/
 .footer {
-  display: table-row;
   height: 40%;
  
 }
 
 .footer-ar {
-  display: table-row;
   height: 35%;
  
 }
@@ -2056,30 +2060,30 @@ body.contact a.contact {
 
 .en-btn {
   background: url('nav-icon.png') no-repeat ; 
-    width: 5%;  
-    height: 3%; 
-    top: 0%;
-    z-index: 20;
-    left: 90%; 
-    position: absolute;
+  width: 5%;  
+  height: 3%; 
+  top: 0%;
+  z-index: 20;
+  left: 90%; 
+  position: absolute;
 }
 
 .ar-btn {
   background: url('nav-icon.png') no-repeat ; 
-    width: 5%;  
-    height: 3%; 
-    top: 0%;
-    z-index: 20;
-    right: 90%; 
-    position: absolute;
+  width: 5%;  
+  height: 3%; 
+  top: 0%;
+  z-index: 20;
+  right: 90%; 
+  position: absolute;
 }
 
-.projects-container h2, .projects-container h3, .projects-container p{
+.projects-container h2, .projects-container h3, .projects-container p {
   width: 100%;
   font-size: 10em;
 }
 
-.projects-container-ar h2, .projects-container-ar h3, .projects-container-ar p{
+.projects-container-ar h2, .projects-container-ar h3, .projects-container-ar p {
   width: 100%;
   font-size: 1em;
 }
@@ -2113,20 +2117,20 @@ body.contact a.contact {
   margin-bottom: -50%;
 }
 
-.contact-container-ar {
-  margin-left: -100% !important;
-}
+/*.contact-container-ar {
+  margin-right: -180% !important;
+}*/
 
 
 .space-en {
   position: relative;
-  margin-top: 90%;
+  margin-bottom: 40%;
 }
 
 
 .space-ar {
- height: 300%;
- margin: 50%;
+  position: relative;
+ margin-bottom: 100%;
 
 }
 
@@ -2160,6 +2164,8 @@ body.contact a.contact {
   width: 100%;
   font-size: 4em;
 }
+
+
 
 
 }
