@@ -578,7 +578,7 @@ text-decoration: none;
   padding-top: 1%;
   height:220px;
   position: absolute;
-  margin-top: 5%;
+  margin-top: 0%;
   width: 100%;
   height: 12em;
 
@@ -1893,7 +1893,9 @@ body.contact a.contact {
   font-size: 0.7em !important;
 }
 
-
+.space-en {
+  margin-bottom: 70%;
+}
 
 }
 
