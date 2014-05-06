@@ -57,10 +57,9 @@
            <%end%>
       </div> <!-- .header  --> 
 
-       <div class="container">
               <!-- main page content -->
               <% if  I18n.locale == :en %>
-                     <div class="container-en">
+                     <div class="container-en push">
                          <%= yield %>
                       </div>
               <%else%>
@@ -161,10 +160,10 @@
 
         <nav class="menu-ar push-menu-left">
              <ul> 
-                <li><%= link_to "إتصل بنا", contact_path, :class => 'contact'%></li>
-                <li><%= link_to "الخدمات", services_path, :class => 'service' %></li>
-                <li><%= link_to "المشاريع", projects_path, :class => 'project' %></li>
                 <li><%= link_to "من نحن", about_path, :class => 'about' %></li>
+                <li><%= link_to "المشاريع", projects_path, :class => 'project' %></li>
+                <li><%= link_to "الخدمات", services_path, :class => 'service' %></li>
+                <li><%= link_to "إتصل بنا", contact_path, :class => 'contact'%></li>
                 <li class="english"><%= link_to "English", :locale=>'en'%></li>
                </ul>
         </nav>
@@ -198,8 +197,6 @@ $('.toggle-push-right').hide();
 </script>
 
 
-
-
 <script>
 $("a.pull").click(function(){
   event.preventDefault();
@@ -209,18 +206,6 @@ $("a.pull").click(function(){
 });
 
 </script>
-
-<script>
-
-$('.facebook').hover(function(){
-
- $(this).switchClass('facebook', 'facebok-blue');
-
-});
-
-
-</script>
-
 
 
 <script type="text/javascript">
@@ -233,7 +218,6 @@ $('.facebook').hover(function(){
 <%= javascript_include_tag "nav", "data-turbolinks-track" => true %>
 
 <script>
- 
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-34160351-1']);
     _gaq.push(['_trackPageview']);
@@ -241,49 +225,19 @@ $('.facebook').hover(function(){
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    
+    })();    
 </script>
 
 <script>
-
-// $(window).bind("load", function() { 
-       
-//        var footerHeight = 0,
-//            footerTop = 0,
-//            $footer = $(".footer");
-           
-//        positionFooter();
-       
-//        function positionFooter() {
-       
-//                 footerHeight = $footer.height();
-//                 footerTop = ($(window).scrollTop()+$(window).height()-footerHeight)+"px";
-       
-//                if ( ($(document.body).height()+footerHeight) < $(window).height()) {
-//                    $footer.css({
-//                         position: "absolute"
-//                    }).animate({
-//                         top: footerTop
-//                    })
-//                } else {
-//                    $footer.css({
-//                         position: "static"
-//                    })
-//                }
-               
-//        }
-
-//        $(window)
-//                .scroll(positionFooter)
-//                .resize(positionFooter)
-               
-// });
-
-
-
-
+ $(".facebook img") 
+   .on( "mouseover", function() {
+    $(this).attr ('src', '/assets/facebook-blue.png');
+  })
+    .on( "mouseleave", function() {
+    $(this).attr ('src', '/assets/facebook.png');             
+});
 </script>
+
       
 </body>
 </html>
