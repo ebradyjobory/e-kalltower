@@ -1607,6 +1607,17 @@ p, h1, h2, h3 {
 
 }
 
+.projects-container-ar {
+   
+   padding-bottom: 5%;
+   overflow:auto;
+   text-align: right;
+   font-family: 'Droid Arabic Kufi', serif;
+   margin-right: 0%;
+
+}
+
+
 .copyrights-ar p:nth-child(2) {
   margin-top: -3%;
 }
@@ -1806,7 +1817,7 @@ body.contact a.contact {
   margin-top: -4% !important;
 }
 
-
+/*
 .home h2, .contact h2, .projects h2, .services h2, .about h2 {
   font-size: 3.5em !important;
 
@@ -1815,7 +1826,7 @@ body.contact a.contact {
 .home p, .contact p, .projects p, .services p, .about p{
   font-size: 2em !important;
 }
-
+*/
 .copyrights {
   position: absolute;
   display: block;
@@ -1918,6 +1929,12 @@ button   {
   font-size: 2em;
 }
 
+
+.statement-ar {
+  font-size: 1.5em;
+}
+
+
 .white-section {
   position: relative;
   margin-top: 70%;
@@ -1925,12 +1942,13 @@ button   {
 
 .about-columns {
   width: 100%;
-  font-size: 5em !important;
+  font-size: 10em !important;
 }
 
-#home-page footer{
-display: none;
+.glow > p{
+  font-size: 20em !important;
 }
+
 .container-en h2 {
   color: #ecf0f1;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
@@ -1957,7 +1975,7 @@ display: none;
   border-top: 1px solid #444;
   margin-left: 18%;
   margin-right: 0%;
-  font-size: 0.6em !important;
+  font-size: 1.5em !important;
   width: 60%;
   padding-top: 3%;
   margin-top: 35%;
@@ -1970,8 +1988,8 @@ display: none;
   border-top: 1px solid #444;
   margin-right: 30%;
   margin-left: 0%;
-  font-size: 0.6em !important;
-  width: 50%;
+  font-size: 1.5em !important;
+  width: 55%;
   padding-top: 3%;
   margin-top: 35%;
   margin-bottom: 0%;
@@ -1986,7 +2004,7 @@ display: none;
 }
 
 .copyrights-ar p:nth-child(2) {
-  margin-left: -18% !important;
+  margin-left: -13% !important;
   margin-top: 6%;
   width: 100%;
 }
@@ -1995,7 +2013,7 @@ display: none;
   margin-left: 5%;
 }
 .statement-ar h2{
-  font-size: 6em !important;
+  font-size: 5em !important;
 }
 
 .statement-ar p{
@@ -2005,7 +2023,8 @@ display: none;
 .container-en {
   text-align: center;
   width: 90%;
-  margin-top: 6%;
+  margin-top: 20%;
+  margin-bottom: -20%;
 
 }
 
@@ -2043,6 +2062,24 @@ button   {
  
 }
 
+.statement-en h2{
+  font-size: 3em !important;
+}
+
+.statement  h2{
+
+  font-size: 6em !important;
+}
+
+.statement  p{
+
+  font-size: 4em !important;
+
+}
+
+.statement-en p{
+  font-size: 2em !important;
+}
 .about-container, .projects-container, .contact-container {
   font-size: 0.2em !important;
   text-align: center;
@@ -2083,17 +2120,26 @@ body.contact a.contact {
 }
 
 .projects-container h2, .projects-container h3, .projects-container p {
-  width: 100%;
-  font-size: 10em;
+  width: 80%;
+  font-size: 13em;
 }
 
 .projects-container-ar h2, .projects-container-ar h3, .projects-container-ar p {
   width: 100%;
   font-size: 1em;
 }
+
 .projects-container {
   text-align: left;
+  width: 100%;
 }
+
+.projects-container-ar {
+  text-align: center;
+  width: 100%;
+}
+
+
 .services-container h3, .services-container ul{
   font-size: 3em;
   color: black !important;
@@ -2111,11 +2157,13 @@ body.contact a.contact {
 }
 
 .contact-container {
-  font-size: 1em !important;
   text-align: center;
-  margin-left: 20%;
-  width: 200%;
 
+}
+
+.contact-column {
+  font-size: 15em;
+  width: 100% !important;
 }
 .container-ar {
   margin-bottom: -50%;
@@ -2128,7 +2176,7 @@ body.contact a.contact {
 
 .space-en {
   position: relative;
-  margin-bottom: 40%;
+  margin-bottom: 70%;
 }
 
 
@@ -2156,20 +2204,36 @@ body.contact a.contact {
   font-size: 2em;
   width: 100%;
   margin-right: 100%;
+  margin-bottom: 50% !important; 
   margin-top: 20%;
 
 }
 
 .services-contact-us p {
-  font-size: 2em;
+  font-size: 3em;
+}
+
+
+.services-contact-us-arabic p {
+  font-size: 2.5em;
+  margin-top: 10%;
 }
 
 .about-columns-ar {
   width: 100%;
-  font-size: 4em;
+  font-size: 12em;
+
 }
 
+.contact-container-ar {
+  font-size: 2.7em !important;
+  text-align: center !important;
+}
 
+.contact-column-ar {
+  margin-right: 25%;
+  width: 100%;
+}
 
 
 }
