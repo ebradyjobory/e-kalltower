@@ -18,8 +18,17 @@ html, body {
   height: 1px;
 }
 .push {
-  height: auto;
+  height: -2%;
 }
+
+/*.projects-gap {
+  margin-bottom: -12%; 
+}
+
+.services-gap {
+    margin-bottom: -7%; 
+*/
+
 /* button   {  
     background: url('nav-icon.png') no-repeat ; 
     width: 3%;  
@@ -41,7 +50,9 @@ html, body {
     position: absolute;
     display: none;   
 }  */
-
+button {
+  display: none;
+}
 .logo {
   margin-left: 7%;
   margin-top: 0.55%;
@@ -135,7 +146,7 @@ body#services-page {
 
 .container-en {
   width: auto;
-  margin:  14% 49% 15% 3%;
+  margin:  14% 49% 10% 3%;
 }
 
 .container-en h2 {
@@ -502,8 +513,6 @@ text-decoration: none;
   color: #bdc3c7;
   direction: ltr;
 }
-
-
 
 #facebook {
 	margin-top: 2%;
@@ -1530,7 +1539,9 @@ p, h1, h2, h3 {
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
 
-
+button {
+  display: block;
+}
  .nav-links-en, .nav-links-ar {
   display: none;
  }
