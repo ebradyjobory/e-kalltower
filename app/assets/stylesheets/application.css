@@ -138,16 +138,6 @@ body#services-page {
   margin:  4em 49% 10em 3%;
 }
 
-.space-en {
-  margin-top: -70%;
-}
-.space-ar {
-  margin-top: -60%;
-}
-.projects-gap {
-  margin-bottom: -20%;
-}
-
 .container-en h2 {
   color: #ecf0f1;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
@@ -1075,10 +1065,12 @@ span p {
 }
 
 .projects-container-ar {
-  padding-bottom: 5%;
+   
+   padding-bottom: 5%;
    overflow:auto;
    text-align: right;
    font-family: 'Droid Arabic Kufi', serif;
+   margin-right: 0%;
 
 }
 
@@ -1549,6 +1541,11 @@ p, h1, h2, h3 {
   display: none;
 }
 
+.white-section {
+  position: relative;
+  margin-bottom: 0%;
+}
+
 .services-container {
   padding-bottom: -100%;
 }
@@ -1636,20 +1633,32 @@ p, h1, h2, h3 {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   margin-top: 0%;
-  height: 30%;
+  padding-bottom: 3%;
 }
 
 .footer-ar {
-  position: absolute;
-  margin-top: 8%;
-  height: 60%;
+  position: relative;
+  margin-top: 0%;
+  padding-bottom: 2%;
 }
 
 .projects-container h3{
   font-size: 1.3em;
 }
+
+.services-container h3{
+  font-size: 1.3em;
+}
+
+.services-container p {
+  margin-top: 18%;
+  font-size: 1.5em;
+
+}
+
+
 .contact-container {
   font-size: 1.2em;
 }
@@ -1715,9 +1724,12 @@ body.contact a.contact {
     position: absolute;
 }
 
+
 .space-en {
-  margin-bottom: 50%;
+  position: relative;
+  margin-top: 90%;
 }
+
 
 }
 
@@ -1871,6 +1883,11 @@ body.contact a.contact {
 .statement p {
   font-size: 2em !important;
 }
+
+.about-container-ar {
+  font-size: 0.7em !important;
+}
+
 
 
 }
@@ -2100,29 +2117,28 @@ body.contact a.contact {
   margin-left: -100% !important;
 }
 
+
 .space-en {
   position: relative;
-  height: 100%;
-  padding-bottom: 50%;
-
+  margin-top: 90%;
 }
+
 
 .space-ar {
  height: 300%;
  margin: 50%;
 
 }
-.push {
-  height: auto;
-}
 
 .projects-container-ar {
   font-size: 2em;
-  width: 100%;
+  margin-right: 0% !important;
+
 }
 
 .projects-container-ar {
   text-align: right;
+  width: 100%;
 }
 
 .projects-container-ar h3 {
@@ -2145,8 +2161,5 @@ body.contact a.contact {
   font-size: 4em;
 }
 
-.projects-gap {
-  margin-bottom: -450px !important;
-}
 
 }
