@@ -6,6 +6,8 @@ gem 'rails', '4.0.3'
 gem 'paperclip'
 gem 'metamagic'
 
+gem 'newrelic_rpm'
+
 gem 'fancybox2-rails', '~> 0.2.8'
 
 group :development, :test do
