@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>E-Kall Tower Co. | Construction &amp; General Building</title>
-<head> 
+<head>
       <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
       <%= stylesheet_link_tag "normalize", media: "all", "data-turbolinks-track" => true %>
       <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
       <%= javascript_include_tag "jquery.prettyPhoto", "data-turbolinks-track" => true %>
-      <%= javascript_include_tag "jquery.fittext", "data-turbolinks-track" => true %>     
+      <%= javascript_include_tag "jquery.fittext", "data-turbolinks-track" => true %>
       <%= stylesheet_link_tag "prettyPhoto", media: "all", "data-turbolinks-track" => true %>
       <%= stylesheet_link_tag "style", media: "all", "data-turbolinks-track" => true %>
       <%= csrf_meta_tags %>
@@ -52,10 +52,10 @@
                 <li><%= link_to "المشاريع", projects_path, :class => 'project' %></li>
                 <li><%= link_to "من نحن", about_path, :class => 'about' %></li>
               </ul>
-            </div> 
-             <a href="#" class="pull"></a>      
+            </div>
+             <a href="#" class="pull"></a>
            <%end%>
-      </div> <!-- .header  --> 
+      </div> <!-- .header  -->
 
               <!-- main page content -->
               <% if  I18n.locale == :en %>
@@ -81,7 +81,7 @@
                 <%end%>
               <%end%>
 
-           </div> <!-- container -->   
+           </div> <!-- container -->
             <!--  English footer -->
 
              <% if  I18n.locale == :en %>
@@ -99,12 +99,12 @@
                       </div>
 
                       <div class="line-separator-b"></div>
-                      <div class="footer-column-b">  
+                      <div class="footer-column-b">
                   			  <ul>
                             <li><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></li>
                             <li>+964.770.700.0200</li>
                             <li>Baghdad | Erbil | Sulaimaniyah</li>
-                            <li class="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li>
+                            <!-- <li class="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li> -->
                   		    </ul>
                       </div>
                     <div class="copyrights">
@@ -133,7 +133,7 @@
             	             <li><a href="mailto:info@e-kalltower.com">info@e-kalltower.com</a></li>
             	             <li>٧٠٠٠٢٠٠ ٧٧٠ ٩٦٤+</li>
             	             <li>بغداد |  أربيل | السليمانية </li>
-            	             <li class="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li>
+            	             <!-- <li class="facebook"><%= link_to image_tag("facebook.png", :alt => 'Find us on Facebook'), 'https://www.facebook.com/pages/E-Kall-Tower-Company/1415075255395444' %></li> -->
               	 		     </ul>
                       </div>
 
@@ -146,7 +146,7 @@
               <%end%>
 
             </div> <!-- .mainfooter -->
-   </div><!-- /#wrapper -->  
+   </div><!-- /#wrapper -->
 
         <nav class="menu push-menu-right nav-slide-right">
           <ul>
@@ -159,7 +159,7 @@
         </nav>
 
         <nav class="menu-ar push-menu-left">
-             <ul> 
+             <ul>
                 <li><%= link_to "من نحن", about_path, :class => 'about' %></li>
                 <li><%= link_to "المشاريع", projects_path, :class => 'project' %></li>
                 <li><%= link_to "الخدمات", services_path, :class => 'service' %></li>
@@ -167,9 +167,9 @@
                 <li class="english"><%= link_to "English", :locale=>'en'%></li>
                </ul>
         </nav>
-  
-     <button  class="nav-toggler toggle-push-right en-btn"></button> 
-     <button  class="nav-toggler toggle-push-left ar-btn"></button> 
+
+     <button  class="nav-toggler toggle-push-right en-btn"></button>
+     <button  class="nav-toggler toggle-push-left ar-btn"></button>
 
 <% if  I18n.locale == :en %>
 
@@ -225,19 +225,19 @@ $("a.pull").click(function(){
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();    
+    })();
 </script>
 
 <script>
- $(".facebook img") 
+ $(".facebook img")
    .on( "mouseover", function() {
     $(this).attr ('src', '/assets/facebook-blue.png');
   })
     .on( "mouseleave", function() {
-    $(this).attr ('src', '/assets/facebook.png');             
+    $(this).attr ('src', '/assets/facebook.png');
 });
 </script>
 
-      
+
 </body>
 </html>
